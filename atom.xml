@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title><![CDATA[Something]]></title>
   
-  <link href="/atom.xml" rel="self"/>
+  <link href="/blog/atom.xml" rel="self"/>
   <link href="http://iamcc.github.io/blog/"/>
   <updated>2016-01-19T06:36:59.000Z</updated>
   <id>http://iamcc.github.io/blog/</id>
