@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-01-19T06:01:01.000Z</updated>
+  <updated>2016-01-19T06:36:59.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[fuck]]></title>
+    <link href="http://yoursite.com/2016/01/19/fuck/"/>
+    <id>http://yoursite.com/2016/01/19/fuck/</id>
+    <published>2016-01-19T06:33:06.000Z</published>
+    <updated>2016-01-19T06:36:59.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="I_just_take_some_test"><a href="#I_just_take_some_test" class="headerlink" title="I just take some test"></a>I just take some test</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">'fuck u'</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="haha"><a href="#haha" class="headerlink" title="haha"></a>haha</h2><h3 id="fuckfuck"><a href="#fuckfuck" class="headerlink" title="fuckfuck"></a>fuckfuck</h3>]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="I_just_take_some_test"><a href="#I_just_take_some_test" class="headerlink" title="I just take some test"></a>I just take some test</]]>
+    </summary>
+    
+      <category term="fuck you" scheme="http://yoursite.com/tags/fuck-you/"/>
+    
+      <category term="not aaa" scheme="http://yoursite.com/categories/not-aaa/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Hello World]]></title>
