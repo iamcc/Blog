@@ -4,7 +4,7 @@
   
   <link href="/blog/atom.xml" rel="self"/>
   <link href="http://iamcc.github.io/blog/"/>
-  <updated>2016-01-19T06:36:59.000Z</updated>
+  <updated>2016-01-19T07:09:18.000Z</updated>
   <id>http://iamcc.github.io/blog/</id>
   
   <author>
@@ -19,11 +19,13 @@
     <link href="http://iamcc.github.io/blog/2016/01/19/fuck/"/>
     <id>http://iamcc.github.io/blog/2016/01/19/fuck/</id>
     <published>2016-01-19T06:33:06.000Z</published>
-    <updated>2016-01-19T06:36:59.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="I_just_take_some_test"><a href="#I_just_take_some_test" class="headerlink" title="I just take some test"></a>I just take some test</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">'fuck u'</span>);</span><br></pre></td></tr></table></figure>
+    <updated>2016-01-19T07:09:18.000Z</updated>
+    <content type="html"><![CDATA[<p>这是预览<br><a id="more"></a></p>
+<h1 id="I_just_take_some_test"><a href="#I_just_take_some_test" class="headerlink" title="I just take some test"></a>I just take some test</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">'fuck u'</span>);</span><br></pre></td></tr></table></figure>
 <h2 id="haha"><a href="#haha" class="headerlink" title="haha"></a>haha</h2><h3 id="fuckfuck"><a href="#fuckfuck" class="headerlink" title="fuckfuck"></a>fuckfuck</h3>]]></content>
     <summary type="html">
-    <![CDATA[<h1 id="I_just_take_some_test"><a href="#I_just_take_some_test" class="headerlink" title="I just take some test"></a>I just take some test</]]>
+    <![CDATA[<p>这是预览<br>]]>
+    
     </summary>
     
       <category term="fuck you" scheme="http://iamcc.github.io/blog/tags/fuck-you/"/>
