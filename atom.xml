@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://iamcc.github.io/"/>
-  <updated>2016-01-22T04:37:20.000Z</updated>
+  <updated>2016-01-22T04:45:02.000Z</updated>
   <id>http://iamcc.github.io/</id>
   
   <author>
@@ -13,6 +13,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[深入解析Go]]></title>
+    <link href="http://iamcc.github.io/2016/01/22/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90Go/"/>
+    <id>http://iamcc.github.io/2016/01/22/深入解析Go/</id>
+    <published>2016-01-22T04:44:25.000Z</published>
+    <updated>2016-01-22T04:45:02.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="https://tiancaiamao.gitbooks.io/go-internals/content/zh/" target="_blank" rel="external">https://tiancaiamao.gitbooks.io/go-internals/content/zh/</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="https://tiancaiamao.gitbooks.io/go-internals/content/zh/" target="_blank" rel="external">https://tiancaiamao.gitbooks.io/go-inte]]>
+    </summary>
+    
+      <category term="cgo" scheme="http://iamcc.github.io/tags/cgo/"/>
+    
+      <category term="go" scheme="http://iamcc.github.io/tags/go/"/>
+    
+      <category term="golang" scheme="http://iamcc.github.io/tags/golang/"/>
+    
+      <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Go语言调用C]]></title>
