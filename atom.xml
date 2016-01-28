@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://iamcc.github.io/"/>
-  <updated>2016-01-22T04:45:02.000Z</updated>
+  <updated>2016-01-28T03:56:03.000Z</updated>
   <id>http://iamcc.github.io/</id>
   
   <author>
@@ -13,6 +13,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[ECMAScript 6 入门]]></title>
+    <link href="http://iamcc.github.io/2016/01/28/ECMAScript-6-%E5%85%A5%E9%97%A8/"/>
+    <id>http://iamcc.github.io/2016/01/28/ECMAScript-6-入门/</id>
+    <published>2016-01-28T03:54:52.000Z</published>
+    <updated>2016-01-28T03:56:03.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://es6.ruanyifeng.com/" target="_blank" rel="external">http://es6.ruanyifeng.com/</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="http://es6.ruanyifeng.com/" target="_blank" rel="external">http://es6.ruanyifeng.com/</a></p>
+]]>
+    </summary>
+    
+      <category term="es2015" scheme="http://iamcc.github.io/tags/es2015/"/>
+    
+      <category term="es6" scheme="http://iamcc.github.io/tags/es6/"/>
+    
+      <category term="javascript" scheme="http://iamcc.github.io/tags/javascript/"/>
+    
+      <category term="js" scheme="http://iamcc.github.io/tags/js/"/>
+    
+      <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
+    
+      <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[深入解析Go]]></title>
