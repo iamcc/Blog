@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://iamcc.github.io/"/>
-  <updated>2016-02-04T08:39:25.000Z</updated>
+  <updated>2016-02-15T01:29:27.000Z</updated>
   <id>http://iamcc.github.io/</id>
   
   <author>
@@ -13,6 +13,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[56个 PHP 开发常用代码片段]]></title>
+    <link href="http://iamcc.github.io/2016/02/15/56%E4%B8%AA-PHP-%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/"/>
+    <id>http://iamcc.github.io/2016/02/15/56个-PHP-开发常用代码片段/</id>
+    <published>2016-02-15T01:28:40.000Z</published>
+    <updated>2016-02-15T01:29:27.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://www.phpxs.com/code/1009843" target="_blank" rel="external">http://www.phpxs.com/code/1009843</a></p>
+<a id="more"></a>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="http://www.phpxs.com/code/1009843">http://www.phpxs.com/code/1009843</a></p>]]>
+    
+    </summary>
+    
+      <category term="code" scheme="http://iamcc.github.io/tags/code/"/>
+    
+      <category term="php" scheme="http://iamcc.github.io/tags/php/"/>
+    
+      <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[如何在 VPS 上搭建 VPN 来翻墙 ]]></title>
+    <link href="http://iamcc.github.io/2016/02/15/%E5%A6%82%E4%BD%95%E5%9C%A8-VPS-%E4%B8%8A%E6%90%AD%E5%BB%BA-VPN-%E6%9D%A5%E7%BF%BB%E5%A2%99/"/>
+    <id>http://iamcc.github.io/2016/02/15/如何在-VPS-上搭建-VPN-来翻墙/</id>
+    <published>2016-02-15T01:17:23.000Z</published>
+    <updated>2016-02-15T01:18:46.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://www.jianshu.com/p/2f51144c35c9" target="_blank" rel="external">http://www.jianshu.com/p/2f51144c35c9</a></p>
+<a id="more"></a>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="http://www.jianshu.com/p/2f51144c35c9">http://www.jianshu.com/p/2f51144c35c9</a></p>]]>
+    
+    </summary>
+    
+      <category term="shadowsocks" scheme="http://iamcc.github.io/tags/shadowsocks/"/>
+    
+      <category term="ss" scheme="http://iamcc.github.io/tags/ss/"/>
+    
+      <category term="vpn" scheme="http://iamcc.github.io/tags/vpn/"/>
+    
+      <category term="vps" scheme="http://iamcc.github.io/tags/vps/"/>
+    
+      <category term="翻墙" scheme="http://iamcc.github.io/tags/%E7%BF%BB%E5%A2%99/"/>
+    
+      <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[RSA算法原理]]></title>
