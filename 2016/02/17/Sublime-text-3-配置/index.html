@@ -1,0 +1,139 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Sublime text 3 配置 · Something</title><meta name="description" content="Sublime text 3 配置 - CC"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.jpg"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"></head><body><header><a href="/" class="logo-link"><img src="/favicon.jpg"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVES</a></li><li class="nav-list-item"><a href="https://twitter.com/arm_cc" target="_blank" class="nav-list-link">TWITTER</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">Sublime text 3 配置</h1><div class="post-meta"><div class="post-time">Feb 17, 2016</div></div><div class="post-content"><blockquote>
+<p>此文是基于<code>Mac</code>下的<code>Sublime text 3</code>版本的插件配置，不保证兼容<code>Sublime text 2</code>。</p>
+</blockquote>
+<h2 id="u63D2_u4EF6"><a href="#u63D2_u4EF6" class="headerlink" title="插件"></a>插件</h2><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Package Control</td>
+<td>安装插件必备，<a href="https://packagecontrol.io/installation" target="_blank" rel="external">下载</a></td>
+</tr>
+<tr>
+<td>AutoFileName</td>
+<td>文件路径提示</td>
+</tr>
+<tr>
+<td>Babel</td>
+<td>ES6 代码高亮</td>
+</tr>
+<tr>
+<td>Babel Snippets</td>
+<td>ES6 代码提示</td>
+</tr>
+<tr>
+<td>BracketHighlighter</td>
+<td>括号和标签的高亮</td>
+</tr>
+<tr>
+<td>CSS3</td>
+<td>CSS3 代码提示</td>
+</tr>
+<tr>
+<td>CSScomb</td>
+<td>CSS 代码格式化</td>
+</tr>
+<tr>
+<td>DocBlockr</td>
+<td>快速生成注释文档</td>
+</tr>
+<tr>
+<td>Emmet</td>
+<td>快速编写 html</td>
+</tr>
+<tr>
+<td>FileHeader</td>
+<td>自动生成文件头</td>
+</tr>
+<tr>
+<td>Git</td>
+<td>Git 工具（需要安装Git）</td>
+</tr>
+<tr>
+<td>HTML5</td>
+<td>HTML5 帮助插件</td>
+</tr>
+<tr>
+<td>jQuery</td>
+<td>jQuery api 提示</td>
+</tr>
+<tr>
+<td>JSCS-Formatter</td>
+<td>js 格式化插件（需要安装 jscs <code>npm i -g jscs</code>）</td>
+</tr>
+<tr>
+<td>LESS</td>
+<td>less 代码高亮</td>
+</tr>
+<tr>
+<td>SFTP</td>
+<td>ftp 插件</td>
+</tr>
+<tr>
+<td>SideBarEnhancements</td>
+<td>侧边栏增强插件</td>
+</tr>
+<tr>
+<td>SublimeCodeIntel</td>
+<td>代码提示插件</td>
+</tr>
+<tr>
+<td>SublimeLinter</td>
+<td>代码格式检查基础插件</td>
+</tr>
+<tr>
+<td>SublimeLinter-contrib-eslint</td>
+<td>eslint 代码格式检查插件（需要安装eslint@1 <code>npm i -g eslint@1</code>）</td>
+</tr>
+<tr>
+<td>SublimeLinter-json</td>
+<td>json 格式检查</td>
+</tr>
+<tr>
+<td>SVN</td>
+<td>svn 插件</td>
+</tr>
+<tr>
+<td>Terminal</td>
+<td>快速打开命令行</td>
+</tr>
+<tr>
+<td>TrailingSpaces</td>
+<td>自动删除多余的空格</td>
+</tr>
+<tr>
+<td>Volt</td>
+<td>Volt 文件高亮</td>
+</tr>
+<tr>
+<td>Vue Syntax Highlight</td>
+<td>vue 文件代码高亮</td>
+</tr>
+</tbody>
+</table>
+<h2 id="u76AE_u80A4"><a href="#u76AE_u80A4" class="headerlink" title="皮肤"></a>皮肤</h2><p>推荐一套看起来比较舒服的皮肤<code>Seti_UI</code></p>
+<h2 id="Sublime__u914D_u7F6E_u6587_u4EF6"><a href="#Sublime__u914D_u7F6E_u6587_u4EF6" class="headerlink" title="Sublime 配置文件"></a>Sublime 配置文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#10;&#9;&#34;Seti_SB_big&#34;: true,&#10;&#9;&#34;Seti_SB_med&#34;: true,&#10;&#9;&#34;Seti_no_blue_bar&#34;: true,&#10;&#9;&#34;Seti_tabs_med&#34;: true,&#10;&#9;&#34;Seti_tabs_small&#34;: true,&#10;&#9;&#34;additional_path_items&#34;:&#10;&#9;[&#10;&#9;&#9;&#34;/usr/local/bin&#34;&#10;&#9;],&#10;&#9;&#34;always_show_minimap_viewport&#34;: true,&#10;&#9;&#34;bold_folder_labels&#34;: true,&#10;&#9;&#34;color_scheme&#34;: &#34;Packages/User/SublimeLinter/Oceanic Next (SL).tmTheme&#34;,&#10;&#9;&#34;default_line_ending&#34;: &#34;unix&#34;,&#10;&#9;&#34;ensure_newline_at_eof_on_save&#34;: true,&#10;&#9;&#34;font_face&#34;: &#34;Fira Mono&#34;,&#10;&#9;&#34;ignored_packages&#34;:&#10;&#9;[&#10;&#9;&#9;&#34;JavaScript&#34;,&#10;&#9;&#9;&#34;Markdown&#34;,&#10;&#9;&#9;&#34;Vintage&#34;&#10;&#9;],&#10;&#9;&#34;line_padding_bottom&#34;: 3,&#10;&#9;&#34;line_padding_top&#34;: 3,&#10;&#9;&#34;overlay_scroll_bars&#34;: &#34;enabled&#34;,&#10;&#9;&#34;tab_size&#34;: 2,&#10;&#9;&#34;theme&#34;: &#34;Seti.sublime-theme&#34;,&#10;&#9;&#34;translate_tabs_to_spaces&#34;: true,&#10;&#9;&#34;trim_trailing_white_space_on_save&#34;: true,&#10;&#9;&#34;word_wrap&#34;: &#34;false&#34;&#10;&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>注意这里我用到<code>Fira Mono</code>字体，没有的可以去下载安装，等宽字体，看起来比较舒服。</p>
+</blockquote>
+<h2 id="u5982_u4F55_u8BA9_Sublime__u5E2E_u6211_u68C0_u67E5_u4EE3_u7801_u683C_u5F0F"><a href="#u5982_u4F55_u8BA9_Sublime__u5E2E_u6211_u68C0_u67E5_u4EE3_u7801_u683C_u5F0F" class="headerlink" title="如何让 Sublime 帮我检查代码格式"></a>如何让 Sublime 帮我检查代码格式</h2><ol>
+<li><code>npm i -g eslint@1 eslint-config-airbnb eslint-plugin-react</code></li>
+<li><p>在项目根目录创建<code>.eslintrc</code>文件内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#10;  &#34;extends&#34;: &#34;airbnb&#34;&#10;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>现在只要在<code>Sublime</code>编写<code>javascript</code>就会提示错误了。</p>
+</li>
+</ol>
+</div></article></div></section><footer><div class="paginator"><a href="/2016/02/15/56个-PHP-开发常用代码片段/" class="next">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'iamcc';
+var disqus_identifier = '2016/02/17/Sublime-text-3-配置/';
+var disqus_title = 'Sublime text 3 配置';
+var disqus_url = 'http://iamcc.github.io/2016/02/17/Sublime-text-3-配置/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//iamcc.disqus.com/count.js" async></script><div class="copyright"><p>© 2016 <a href="http://iamcc.github.io">CC</a>.</p></div></footer><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-73001310-1",'auto');ga('send','pageview');</script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?8718c8cecd91e2851d2ea5f02a9d12e7";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script><script src="https://cdn.bootcss.com/mathjax/2.5.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></body></html>
