@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://iamcc.github.io/"/>
-  <updated>2016-02-17T09:04:17.000Z</updated>
+  <updated>2016-02-22T06:21:46.000Z</updated>
   <id>http://iamcc.github.io/</id>
   
   <author>
@@ -15,11 +15,98 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[Chrome extensions]]></title>
+    <link href="http://iamcc.github.io/2016/02/22/Chrome%20extensions/"/>
+    <id>http://iamcc.github.io/2016/02/22/Chrome extensions/</id>
+    <published>2016-02-22T05:53:25.000Z</published>
+    <updated>2016-02-22T06:21:46.000Z</updated>
+    <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th>name</th>
+<th>detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JSONView</td>
+<td>JSON 格式化查看器。<a href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc" target="_blank" rel="external">Download</a></td>
+</tr>
+<tr>
+<td>Justinmind</td>
+<td>用户查看产品部发布的产品图。<a href="https://chrome.google.com/webstore/detail/justinmind-extension/pnfffbfcdapknabgmlnpagljkjdejaap" target="_blank" rel="external">Download</a></td>
+</tr>
+<tr>
+<td>Octo Linker</td>
+<td>自动分析package.json 里面的包，增加跳转链接。<a href="https://chrome.google.com/webstore/detail/octo-linker/jlmafbaeoofdegohdhinkhilhclaklkp" target="_blank" rel="external">Download</a></td>
+</tr>
+<tr>
+<td>Octotree</td>
+<td>为Github 增加文件导航。<a href="https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc" target="_blank" rel="external">Download</a></td>
+</tr>
+<tr>
+<td>OneTab</td>
+<td>当打开很多Tab的时候，电脑很慢，想暂时关闭的时候可以用。<a href="https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall" target="_blank" rel="external">Download</a></td>
+</tr>
+<tr>
+<td>PageSpeed Insights (by Google)</td>
+<td>前端页面优化分析工具。<a href="https://developers.google.com/speed/pagespeed/" target="_blank" rel="external">Download</a></td>
+</tr>
+<tr>
+<td>Postman</td>
+<td>API调试工具。<a href="https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop" target="_blank" rel="external">Download</a></td>
+</tr>
+<tr>
+<td>Proxy SwitchySharp</td>
+<td>翻墙工具。<a href="https://chrome.google.com/webstore/detail/proxy-switchysharp/dpplabbmogkhghncfbfdeeokoefdjegm" target="_blank" rel="external">Download</a></td>
+</tr>
+<tr>
+<td>React Developer Tools</td>
+<td>React 调试工具。<a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi" target="_blank" rel="external">Download</a></td>
+</tr>
+<tr>
+<td>Vue.js devtools</td>
+<td>Vue.js 调试工具。<a href="https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd" target="_blank" rel="external">Download</a></td>
+</tr>
+<tr>
+<td>草料二维码</td>
+<td>二维码生成器。<a href="http://static.clewm.net/cli/addons/caoliao.crx" target="_blank" rel="external">Download</a></td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    <summary type="html">
+    <![CDATA[<table>
+<thead>
+<tr>
+<th>name</th>
+<th>detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JSONView</td>
+<td>JSON 格式化查看器。<a href="https://chrome.goo]]>
+    </summary>
+    
+      <category term="app" scheme="http://iamcc.github.io/tags/app/"/>
+    
+      <category term="chrome" scheme="http://iamcc.github.io/tags/chrome/"/>
+    
+      <category term="extension" scheme="http://iamcc.github.io/tags/extension/"/>
+    
+      <category term="tools" scheme="http://iamcc.github.io/tags/tools/"/>
+    
+      <category term="tools" scheme="http://iamcc.github.io/categories/tools/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Sublime text 3 配置]]></title>
     <link href="http://iamcc.github.io/2016/02/17/Sublime-text-3-%E9%85%8D%E7%BD%AE/"/>
     <id>http://iamcc.github.io/2016/02/17/Sublime-text-3-配置/</id>
     <published>2016-02-17T08:29:50.000Z</published>
-    <updated>2016-02-17T09:04:17.000Z</updated>
+    <updated>2016-02-22T05:54:09.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>此文是基于<code>Mac</code>下的<code>Sublime text 3</code>版本的插件配置，不保证兼容<code>Sublime text 2</code>。</p>
 </blockquote>
@@ -165,7 +252,9 @@
     
       <category term="sublime" scheme="http://iamcc.github.io/tags/sublime/"/>
     
-      <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
+      <category term="tools" scheme="http://iamcc.github.io/tags/tools/"/>
+    
+      <category term="tools" scheme="http://iamcc.github.io/categories/tools/"/>
     
   </entry>
   
