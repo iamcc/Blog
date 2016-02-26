@@ -4,7 +4,7 @@
 <h3 id="u524D_u56E0"><a href="#u524D_u56E0" class="headerlink" title="前因"></a>前因</h3><p>服务器因为受到用户抢红包而超负荷Down机，在没有意识的情况下直接重启了服务，结果出现了所有服务都出现了问题，最终定位为数据库连接失败。立即上服务器查询，第一感觉是一切良好，没有什么问题，唯一一个奇怪的地方就是，每个分片的Replset 的数据都正常，但是mongoos的collections却少了好多。Google一番还是没结果，😂，正欲哭无泪的时候想起了阿里的同学，经过一番帮助，终于恢复正常。</p>
 <h3 id="u539F_u56E0"><a href="#u539F_u56E0" class="headerlink" title="原因"></a>原因</h3><p>出现collection数量不同步的原因原来是主shard出现了问题，重启服务的时候，不知什么情况下，shard1的Replset找不到master，然后shard1启动失败了，然后主shard变成了shard2，查来查去都查不到问题，因为一切看起来都那么正常。而少了的那部份collections就是shard1里面的未sharding的collection，未sharding的collection是不会同步到其他shard，所以当主shard是shard2的时候自然就少了那部份collections</p>
 <h3 id="u603B_u7ED3"><a href="#u603B_u7ED3" class="headerlink" title="总结"></a>总结</h3><p>😂，真是吓出一身冷汗，查不出问题也是因为经验不足和不够细心，也是对整套架构的了解不够，所以再次就一笔。</p>
-</div></article></div></section><footer><div class="paginator"><a href="/2016/02/22/Chrome extensions/" class="next">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'iamcc';
+</div></article></div></section><footer><div class="paginator"><a href="/2016/02/26/Top-5-Android-libraries-every-Android-developer-should-know-about-v-2015/" class="prev">PREV</a><a href="/2016/02/22/Chrome extensions/" class="next">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'iamcc';
 var disqus_identifier = '2016/02/24/MongoDB-分布式部署教程/';
 var disqus_title = 'MongoDB 分布式部署教程';
 var disqus_url = 'http://iamcc.github.io/2016/02/24/MongoDB-分布式部署教程/';
