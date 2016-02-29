@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://iamcc.github.io/"/>
-  <updated>2016-02-26T02:54:56.000Z</updated>
+  <updated>2016-02-29T00:43:21.000Z</updated>
   <id>http://iamcc.github.io/</id>
   
   <author>
@@ -13,6 +13,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Use podcast to learn English]]></title>
+    <link href="http://iamcc.github.io/2016/02/29/Use-podcast-to-learn-English/"/>
+    <id>http://iamcc.github.io/2016/02/29/Use-podcast-to-learn-English/</id>
+    <published>2016-02-29T00:37:33.000Z</published>
+    <updated>2016-02-29T00:43:21.000Z</updated>
+    <content type="html"><![CDATA[<p>最近不知道发什么疯，又把podcast 听起来了，所以记录下几个节目单。</p>
+<ol>
+<li>Wait Wait… Don’t Tell Me!</li>
+<li>Learning English for China</li>
+<li>English as a Second Language</li>
+<li>Special English</li>
+<li>英语口语每天学</li>
+<li>英语怎么说？</li>
+<li>英语铺子</li>
+<li>摩天轮（More to learn)</li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>最近不知道发什么疯，又把podcast 听起来了，所以记录下几个节目单。</p>
+<ol>
+<li>Wait Wait… Don’t Tell Me!</li>
+<li>Learning English for China</li>
+<li>English as a Sec]]>
+    </summary>
+    
+      <category term="english" scheme="http://iamcc.github.io/tags/english/"/>
+    
+      <category term="podcast" scheme="http://iamcc.github.io/tags/podcast/"/>
+    
+      <category term="study" scheme="http://iamcc.github.io/tags/study/"/>
+    
+      <category term="language" scheme="http://iamcc.github.io/categories/language/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Top 5 Android libraries every Android developer should know about - v. 2015]]></title>
