@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://iamcc.github.io/"/>
-  <updated>2016-02-29T00:43:21.000Z</updated>
+  <updated>2016-03-04T01:00:50.000Z</updated>
   <id>http://iamcc.github.io/</id>
   
   <author>
@@ -13,6 +13,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[基于Mesos和Docker的分布式计算平台]]></title>
+    <link href="http://iamcc.github.io/2016/03/04/%E5%9F%BA%E4%BA%8EMesos%E5%92%8CDocker%E7%9A%84%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97%E5%B9%B3%E5%8F%B0/"/>
+    <id>http://iamcc.github.io/2016/03/04/基于Mesos和Docker的分布式计算平台/</id>
+    <published>2016-03-04T00:58:35.000Z</published>
+    <updated>2016-03-04T01:00:50.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://blog.dataman-inc.com/2015-06-13-mesos-docker-distributed-computing-platform/" target="_blank" rel="external">http://blog.dataman-inc.com/2015-06-13-mesos-docker-distributed-computing-platform/</a></p>
+<a id="more"></a>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="http://blog.dataman-inc.com/2015-06-13-mesos-docker-distributed-computing-platform/">http://blog.dataman-inc.com/2015-06-13-mesos-docker-distributed-computing-platform/</a></p>]]>
+    
+    </summary>
+    
+      <category term="cluster" scheme="http://iamcc.github.io/tags/cluster/"/>
+    
+      <category term="docker" scheme="http://iamcc.github.io/tags/docker/"/>
+    
+      <category term="mesos" scheme="http://iamcc.github.io/tags/mesos/"/>
+    
+      <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Use podcast to learn English]]></title>
