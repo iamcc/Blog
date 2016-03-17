@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://iamcc.github.io/"/>
-  <updated>2016-03-04T01:00:50.000Z</updated>
+  <updated>2016-03-17T05:03:33.000Z</updated>
   <id>http://iamcc.github.io/</id>
   
   <author>
@@ -13,6 +13,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[聊一聊前端自动化测试]]></title>
+    <link href="http://iamcc.github.io/2016/03/17/%E8%81%8A%E4%B8%80%E8%81%8A%E5%89%8D%E7%AB%AF%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+    <id>http://iamcc.github.io/2016/03/17/聊一聊前端自动化测试/</id>
+    <published>2016-03-17T04:57:09.000Z</published>
+    <updated>2016-03-17T05:03:33.000Z</updated>
+    <content type="html"><![CDATA[<p>天猫分享的好文<br><a href="https://github.com/tmallfe/tmallfe.github.io/issues/37" target="_blank" rel="external">https://github.com/tmallfe/tmallfe.github.io/issues/37</a></p>
+<a id="more"></a>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>天猫分享的好文<br><a href="https://github.com/tmallfe/tmallfe.github.io/issues/37">https://github.com/tmallfe/tmallfe.github.io/issues/37</a></p>]]>
+    
+    </summary>
+    
+      <category term="javascript" scheme="http://iamcc.github.io/tags/javascript/"/>
+    
+      <category term="js" scheme="http://iamcc.github.io/tags/js/"/>
+    
+      <category term="react" scheme="http://iamcc.github.io/tags/react/"/>
+    
+      <category term="testing" scheme="http://iamcc.github.io/tags/testing/"/>
+    
+      <category term="unit testing" scheme="http://iamcc.github.io/tags/unit-testing/"/>
+    
+      <category term="webpack" scheme="http://iamcc.github.io/tags/webpack/"/>
+    
+      <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[基于Mesos和Docker的分布式计算平台]]></title>
