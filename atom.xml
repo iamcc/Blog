@@ -26,15 +26,15 @@
     <![CDATA[<p>项目里一个正常跑的项目前端突然报了一个 <code>xxx.map is not a function</code>。<br>纳闷的我又开始了填坑的路，chrome debug 一下，发现原本应该是 <code>array</code> 的地方变成 <code>object]]>
     </summary>
     
-      <category term="array" scheme="http://iamcc.github.io/tags/array/"/>
+      <category term="php" scheme="http://iamcc.github.io/tags/php/"/>
+    
+      <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
     
       <category term="javascript" scheme="http://iamcc.github.io/tags/javascript/"/>
     
       <category term="json" scheme="http://iamcc.github.io/tags/json/"/>
     
-      <category term="php" scheme="http://iamcc.github.io/tags/php/"/>
-    
-      <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
+      <category term="array" scheme="http://iamcc.github.io/tags/array/"/>
     
       <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
     
@@ -52,11 +52,11 @@
     <![CDATA[<p>今天莫名其妙的开发服务器登录成功却马上又跳到401错误，第一反应当然是session出问题。<br>排查代码没有修改，配置文件没有修改，但是session始终无法正确保存。<br>最后再排查日志，由于redis开了aof，磁盘占满后无法写入磁盘导致redis无法写入。<br]]>
     </summary>
     
-      <category term="error" scheme="http://iamcc.github.io/tags/error/"/>
-    
       <category term="exp" scheme="http://iamcc.github.io/tags/exp/"/>
     
       <category term="redis" scheme="http://iamcc.github.io/tags/redis/"/>
+    
+      <category term="error" scheme="http://iamcc.github.io/tags/error/"/>
     
       <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
     
@@ -76,17 +76,17 @@
     
     </summary>
     
-      <category term="javascript" scheme="http://iamcc.github.io/tags/javascript/"/>
-    
       <category term="js" scheme="http://iamcc.github.io/tags/js/"/>
     
-      <category term="react" scheme="http://iamcc.github.io/tags/react/"/>
+      <category term="javascript" scheme="http://iamcc.github.io/tags/javascript/"/>
     
       <category term="testing" scheme="http://iamcc.github.io/tags/testing/"/>
     
       <category term="unit testing" scheme="http://iamcc.github.io/tags/unit-testing/"/>
     
       <category term="webpack" scheme="http://iamcc.github.io/tags/webpack/"/>
+    
+      <category term="react" scheme="http://iamcc.github.io/tags/react/"/>
     
       <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
     
@@ -108,9 +108,9 @@
     
       <category term="cluster" scheme="http://iamcc.github.io/tags/cluster/"/>
     
-      <category term="docker" scheme="http://iamcc.github.io/tags/docker/"/>
-    
       <category term="mesos" scheme="http://iamcc.github.io/tags/mesos/"/>
+    
+      <category term="docker" scheme="http://iamcc.github.io/tags/docker/"/>
     
       <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
     
@@ -144,9 +144,9 @@
     
       <category term="english" scheme="http://iamcc.github.io/tags/english/"/>
     
-      <category term="podcast" scheme="http://iamcc.github.io/tags/podcast/"/>
-    
       <category term="study" scheme="http://iamcc.github.io/tags/study/"/>
+    
+      <category term="podcast" scheme="http://iamcc.github.io/tags/podcast/"/>
     
       <category term="language" scheme="http://iamcc.github.io/categories/language/"/>
     
@@ -169,35 +169,35 @@
 <p>在2014年6月，我们发表了一篇关于<a href="https://infinum.co/the-capsized-eight/articles/top-5-android-libraries-every-android-developer-should-know-about" target="_blank" rel="external">5 个顶级 Android 开源库</a>的文章，我们一直在用，并且相信每个 Android 开发者都应该了解这些开源库。从那之后，Android 方面已经发生了很多变化，所以我们写了这篇文章，我们最喜欢的5个开源库的更新版。</p>
 <p>下面是更新列表:</p>
 <p><img src="https://s3.amazonaws.com/infinum.web.production/repository_items/files/000/000/308/original/top_5_android_libraries.png?1402486321" alt="Top 5 Android libraries"></p>
-<h2 id="1-_Retrofit"><a href="#1-_Retrofit" class="headerlink" title="1. Retrofit"></a>1. <a href="https://github.com/square/retrofit/tree/version-one" target="_blank" rel="external">Retrofit</a></h2><p>当涉及到实现 REST APIs 时，Retrofit 仍是我们的最爱。</p>
+<h2 id="1-Retrofit"><a href="#1-Retrofit" class="headerlink" title="1. Retrofit"></a>1. <a href="https://github.com/square/retrofit/tree/version-one" target="_blank" rel="external">Retrofit</a></h2><p>当涉及到实现 REST APIs 时，Retrofit 仍是我们的最爱。</p>
 <p>他们的网站上写着: “Retrofit 将 REST API 转换为 Java 接口。”是的，还有其他解决方案，但是 Retrofit 已经被证明是在一个项目中管理 API 调用最优雅、最方便的解决方案。使用注解添加请求方法和相对地址使得代码干净简单。</p>
 <p>通过注解，你可以轻松地添加请求体，操作 URL 或请求头并添加查询参数。</p>
 <p>为方法添加返回类型会使该方法同步执行，然而添加Callback（回调）会使之异步执行，完成后回调 success 或 failure 方法。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">RetrofitInterface</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 异步带回调</span></span><br><span class="line">    <span class="annotation">@GET</span>(<span class="string">"/api/user"</span>)</span><br><span class="line">    <span class="function">User <span class="title">getUser</span><span class="params">(@Query(<span class="string">"user_id"</span>)</span> <span class="keyword">int</span> userId, Callback&lt;User&gt; callback)</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 同步</span></span><br><span class="line">    <span class="annotation">@POST</span>(<span class="string">"/api/user/register"</span>)</span><br><span class="line">    <span class="function">User <span class="title">registerUser</span><span class="params">(@Body User user)</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 例子</span></span><br><span class="line">RetrofitInterface retrofitInterface = <span class="keyword">new</span> RestAdapter.Builder()</span><br><span class="line">            .setEndpoint(API.API_URL).build().create(RetrofitInterface.class);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 获取 id 为 2048 的用户</span></span><br><span class="line">retrofitInterface.getUser(<span class="number">2048</span>, <span class="keyword">new</span> Callback&lt;User&gt;() &#123;</span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">success</span><span class="params">(User user, Response response)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">failure</span><span class="params">(RetrofitError retrofitError)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">RetrofitInterface</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="comment">// 异步带回调</span></div><div class="line">    <span class="meta">@GET</span>(<span class="string">"/api/user"</span>)</div><div class="line">    <span class="function">User <span class="title">getUser</span><span class="params">(@Query(<span class="string">"user_id"</span>)</span> <span class="keyword">int</span> userId, Callback&lt;User&gt; callback)</span>;</div><div class="line"></div><div class="line">    <span class="comment">// 同步</span></div><div class="line">    <span class="meta">@POST</span>(<span class="string">"/api/user/register"</span>)</div><div class="line">    <span class="function">User <span class="title">registerUser</span><span class="params">(@Body User user)</span></span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line"><span class="comment">// 例子</span></div><div class="line">RetrofitInterface retrofitInterface = <span class="keyword">new</span> RestAdapter.Builder()</div><div class="line">            .setEndpoint(API.API_URL).build().create(RetrofitInterface.class);</div><div class="line"></div><div class="line"><span class="comment">// 获取 id 为 2048 的用户</span></div><div class="line">retrofitInterface.getUser(<span class="number">2048</span>, <span class="keyword">new</span> Callback&lt;User&gt;() &#123;</div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">success</span><span class="params">(User user, Response response)</span> </span>&#123;</div><div class="line"></div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">failure</span><span class="params">(RetrofitError retrofitError)</span> </span>&#123;</div><div class="line"></div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <p>Retrofit 默认使用 <a href="https://code.google.com/p/google-gson/" target="_blank" rel="external">Gson</a>，所以不需要手动解析 JSON。当然其他的转换器也是支持的。</p>
 <p>现在 Retrofit 2.0 正在活跃地开发着，仍然是 beta，但你可以从<a href="http://square.github.io/retrofit/" target="_blank" rel="external">这里</a>获取到。从 Retrofit 1.9 开始，很多的东西都被砍了，也有一些重大的变化比如使用新的调用接口取代回调。</p>
-<h2 id="2-_DBFlow"><a href="#2-_DBFlow" class="headerlink" title="2. DBFlow"></a>2. <a href="https://github.com/Raizlabs/DBFlow" target="_blank" rel="external">DBFlow</a></h2><p>如果你正准备在你的项目中存储任意复杂的数据，你应该使用 DBFlow。正如他们的 GitHub 上所说，这是“一个速度极快，功能强大，而且非常简单的 Android 数据库 ORM 库，为你编写数据库代码”。</p>
+<h2 id="2-DBFlow"><a href="#2-DBFlow" class="headerlink" title="2. DBFlow"></a>2. <a href="https://github.com/Raizlabs/DBFlow" target="_blank" rel="external">DBFlow</a></h2><p>如果你正准备在你的项目中存储任意复杂的数据，你应该使用 DBFlow。正如他们的 GitHub 上所说，这是“一个速度极快，功能强大，而且非常简单的 Android 数据库 ORM 库，为你编写数据库代码”。</p>
 <p>一些简单的栗子:</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Query a List</span></span><br><span class="line"><span class="keyword">new</span> Select().from(SomeTable.class).queryList();</span><br><span class="line"><span class="keyword">new</span> Select().from(SomeTable.class).where(conditions).queryList();</span><br><span class="line"></span><br><span class="line"><span class="comment">// Query Single Model</span></span><br><span class="line"><span class="keyword">new</span> Select().from(SomeTable.class).querySingle();</span><br><span class="line"><span class="keyword">new</span> Select().from(SomeTable.class).where(conditions).querySingle();</span><br><span class="line"></span><br><span class="line"><span class="comment">// Query a Table List and Cursor List</span></span><br><span class="line"><span class="keyword">new</span> Select().from(SomeTable.class).where(conditions).queryTableList();</span><br><span class="line"><span class="keyword">new</span> Select().from(SomeTable.class).where(conditions).queryCursorList();</span><br><span class="line"></span><br><span class="line"><span class="comment">// SELECT methods</span></span><br><span class="line"><span class="keyword">new</span> Select().distinct().from(table).queryList();</span><br><span class="line"><span class="keyword">new</span> Select().all().from(table).queryList();</span><br><span class="line"><span class="keyword">new</span> Select().avg(SomeTable$Table.SALARY).from(SomeTable.class).queryList();</span><br><span class="line"><span class="keyword">new</span> Select().method(SomeTable$Table.SALARY, <span class="string">"MAX"</span>).from(SomeTable.class).queryList();</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Query a List</span></div><div class="line"><span class="keyword">new</span> Select().from(SomeTable.class).queryList();</div><div class="line"><span class="keyword">new</span> Select().from(SomeTable.class).where(conditions).queryList();</div><div class="line"></div><div class="line"><span class="comment">// Query Single Model</span></div><div class="line"><span class="keyword">new</span> Select().from(SomeTable.class).querySingle();</div><div class="line"><span class="keyword">new</span> Select().from(SomeTable.class).where(conditions).querySingle();</div><div class="line"></div><div class="line"><span class="comment">// Query a Table List and Cursor List</span></div><div class="line"><span class="keyword">new</span> Select().from(SomeTable.class).where(conditions).queryTableList();</div><div class="line"><span class="keyword">new</span> Select().from(SomeTable.class).where(conditions).queryCursorList();</div><div class="line"></div><div class="line"><span class="comment">// SELECT methods</span></div><div class="line"><span class="keyword">new</span> Select().distinct().from(table).queryList();</div><div class="line"><span class="keyword">new</span> Select().all().from(table).queryList();</div><div class="line"><span class="keyword">new</span> Select().avg(SomeTable$Table.SALARY).from(SomeTable.class).queryList();</div><div class="line"><span class="keyword">new</span> Select().method(SomeTable$Table.SALARY, <span class="string">"MAX"</span>).from(SomeTable.class).queryList();</div></pre></td></tr></table></figure>
 <p>DBFlow 是一个不错的 ORM，这将消除大量用于处理数据库的样板代码。虽然 Android 也有其他的 ORM 方案，但对我们来说 DBFlow 已被证明是最好的解决方案。</p>
-<h2 id="3-_Glide"><a href="#3-_Glide" class="headerlink" title="3. Glide"></a>3. <a href="https://github.com/bumptech/glide" target="_blank" rel="external">Glide</a></h2><p>Glide 是一个用于加载图片的库。当前备选方案有 <a href="https://github.com/nostra13/Android-Universal-Image-Loader" target="_blank" rel="external">Universal Image Loader</a> 和 <a href="https://github.com/square/picasso" target="_blank" rel="external">Picasso</a>；但是，以我来看，Glide 是当前的最佳选择。</p>
+<h2 id="3-Glide"><a href="#3-Glide" class="headerlink" title="3. Glide"></a>3. <a href="https://github.com/bumptech/glide" target="_blank" rel="external">Glide</a></h2><p>Glide 是一个用于加载图片的库。当前备选方案有 <a href="https://github.com/nostra13/Android-Universal-Image-Loader" target="_blank" rel="external">Universal Image Loader</a> 和 <a href="https://github.com/square/picasso" target="_blank" rel="external">Picasso</a>；但是，以我来看，Glide 是当前的最佳选择。</p>
 <p>下面是一个简单的例子，关于如何使用 Glide 从 URL 加载图片到 ImageView。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ImageView imageView = (ImageView) findViewById(R.id.my_image_view);</span><br><span class="line"></span><br><span class="line">Glide.with(<span class="keyword">this</span>).load(<span class="string">"http://goo.gl/gEgYUd"</span>).into(imageView);</span><br></pre></td></tr></table></figure>
-<h2 id="4-_Butterknife"><a href="#4-_Butterknife" class="headerlink" title="4. Butterknife"></a>4. <a href="http://jakewharton.github.io/butterknife/" target="_blank" rel="external">Butterknife</a></h2><p>一个用于将 Android 视图绑定到属性和方法的库（例如，绑定一个 view 的 OnClick 事件到一个方法）。较之前版本而言，基本功能没有变化，但可选项增加了。栗子：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ExampleActivity</span> <span class="keyword">extends</span> <span class="title">Activity</span> </span>&#123;</span><br><span class="line">  <span class="annotation">@Bind</span>(R.id.title) TextView title;</span><br><span class="line">  <span class="annotation">@Bind</span>(R.id.subtitle) TextView subtitle;</span><br><span class="line">  <span class="annotation">@Bind</span>(R.id.footer) TextView footer;</span><br><span class="line"></span><br><span class="line">  <span class="annotation">@Override</span> <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">    setContentView(R.layout.simple_activity);</span><br><span class="line">    ButterKnife.bind(<span class="keyword">this</span>);</span><br><span class="line">    <span class="comment">// TODO Use fields...</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="5-_Dagger_2"><a href="#5-_Dagger_2" class="headerlink" title="5. Dagger 2"></a>5. <a href="http://google.github.io/dagger/" target="_blank" rel="external">Dagger 2</a></h2><p>自从我们迁移到 MVP 架构，我们就开始了广泛使用依赖注入。Dagger 2 是著名的依赖注入库 Dagger 的继承者，我们强烈推荐它。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ImageView imageView = (ImageView) findViewById(R.id.my_image_view);</div><div class="line"></div><div class="line">Glide.with(<span class="keyword">this</span>).load(<span class="string">"http://goo.gl/gEgYUd"</span>).into(imageView);</div></pre></td></tr></table></figure>
+<h2 id="4-Butterknife"><a href="#4-Butterknife" class="headerlink" title="4. Butterknife"></a>4. <a href="http://jakewharton.github.io/butterknife/" target="_blank" rel="external">Butterknife</a></h2><p>一个用于将 Android 视图绑定到属性和方法的库（例如，绑定一个 view 的 OnClick 事件到一个方法）。较之前版本而言，基本功能没有变化，但可选项增加了。栗子：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">ExampleActivity</span> <span class="keyword">extends</span> <span class="title">Activity</span> </span>&#123;</div><div class="line">  <span class="meta">@Bind</span>(R.id.title) TextView title;</div><div class="line">  <span class="meta">@Bind</span>(R.id.subtitle) TextView subtitle;</div><div class="line">  <span class="meta">@Bind</span>(R.id.footer) TextView footer;</div><div class="line"></div><div class="line">  <span class="meta">@Override</span> <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</div><div class="line">    <span class="keyword">super</span>.onCreate(savedInstanceState);</div><div class="line">    setContentView(R.layout.simple_activity);</div><div class="line">    ButterKnife.bind(<span class="keyword">this</span>);</div><div class="line">    <span class="comment">// TODO Use fields...</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="5-Dagger-2"><a href="#5-Dagger-2" class="headerlink" title="5. Dagger 2"></a>5. <a href="http://google.github.io/dagger/" target="_blank" rel="external">Dagger 2</a></h2><p>自从我们迁移到 MVP 架构，我们就开始了广泛使用依赖注入。Dagger 2 是著名的依赖注入库 Dagger 的继承者，我们强烈推荐它。</p>
 <p>一个主要的改进就是生成的注入代码不再依赖反射，这使得调试容易了许多。</p>
 <p>Dagger 为您创建类的实例，并满足他们的依赖。这依赖于 javax.inject.Inject 注解，以确定哪些构造函数或字段应被视为依赖。以著名的咖啡机(CoffeeMaker)为例:</p>
 <blockquote>
 <p>译者注：Dagger 和 Dagger 2 的官方文档里都是使用这个例子，所以著名…</p>
 </blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Thermosiphon</span> <span class="keyword">implements</span> <span class="title">Pump</span> </span>&#123;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">final</span> Heater heater;</span><br><span class="line"></span><br><span class="line">  <span class="annotation">@Inject</span></span><br><span class="line">  Thermosiphon(Heater heater) &#123;</span><br><span class="line">    <span class="keyword">this</span>.heater = heater;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Thermosiphon</span> <span class="keyword">implements</span> <span class="title">Pump</span> </span>&#123;</div><div class="line">  <span class="keyword">private</span> <span class="keyword">final</span> Heater heater;</div><div class="line"></div><div class="line">  <span class="meta">@Inject</span></div><div class="line">  Thermosiphon(Heater heater) &#123;</div><div class="line">    <span class="keyword">this</span>.heater = heater;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>直接注入到字段的栗子：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CoffeeMaker</span> </span>&#123;</span><br><span class="line">  <span class="annotation">@Inject</span> Heater heater;</span><br><span class="line">  <span class="annotation">@Inject</span> Pump pump;</span><br><span class="line"></span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">CoffeeMaker</span> </span>&#123;</div><div class="line">  <span class="meta">@Inject</span> Heater heater;</div><div class="line">  <span class="meta">@Inject</span> Pump pump;</div><div class="line"></div><div class="line">  ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>通过 modules 和 @Proivides 注解提供依赖(Dependencies)：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="annotation">@Module</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">DripCoffeeModule</span> </span>&#123;</span><br><span class="line">  <span class="annotation">@Provides</span> <span class="function">Heater <span class="title">provideHeater</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> ElectricHeater();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="annotation">@Provides</span> <span class="function">Pump <span class="title">providePump</span><span class="params">(Thermosiphon pump)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> pump;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@Module</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">DripCoffeeModule</span> </span>&#123;</div><div class="line">  <span class="meta">@Provides</span> <span class="function">Heater <span class="title">provideHeater</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">new</span> ElectricHeater();</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  <span class="meta">@Provides</span> <span class="function">Pump <span class="title">providePump</span><span class="params">(Thermosiphon pump)</span> </span>&#123;</div><div class="line">    <span class="keyword">return</span> pump;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>关于依赖注入本身，如果想获取更多信息，请查看 Dagger 2 主页或 <a href="https://www.youtube.com/watch?v=oK_XtfXPkqw" target="_blank" rel="external">talk about Dagger 2 by Gregory Kick</a>。</p>
-<h3 id="u9644_u52A0_u94FE_u63A5"><a href="#u9644_u52A0_u94FE_u63A5" class="headerlink" title="附加链接"></a>附加链接</h3><p><a href="http://androidweekly.net/" target="_blank" rel="external">Android 周报</a> 仍然是学习 Android 库最好的资源之一。这是关于Android开发的每周时事资讯。</p>
+<h3 id="附加链接"><a href="#附加链接" class="headerlink" title="附加链接"></a>附加链接</h3><p><a href="http://androidweekly.net/" target="_blank" rel="external">Android 周报</a> 仍然是学习 Android 库最好的资源之一。这是关于Android开发的每周时事资讯。</p>
 <p>此外，下面是 Android 行业经常发关于 Android 开发文章的大咖们：</p>
 <p><a href="https://twitter.com/JakeWharton" target="_blank" rel="external">Jake Wharton</a> <a href="https://twitter.com/chrisbanes" target="_blank" rel="external">Chris Banes</a> <a href="https://twitter.com/cyrilmottier" target="_blank" rel="external">Cyril Mottier</a> <a href="https://twitter.com/commonsguy" target="_blank" rel="external">Mark Murphy</a> <a href="https://twitter.com/MarkIAllison" target="_blank" rel="external">Mark Allison</a> <a href="https://twitter.com/retomeier" target="_blank" rel="external">Reto Meier</a></p>
 ]]></content>
@@ -208,9 +208,9 @@
     
       <category term="android" scheme="http://iamcc.github.io/tags/android/"/>
     
-      <category term="dev" scheme="http://iamcc.github.io/tags/dev/"/>
-    
       <category term="lib" scheme="http://iamcc.github.io/tags/lib/"/>
+    
+      <category term="dev" scheme="http://iamcc.github.io/tags/dev/"/>
     
       <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
     
@@ -225,20 +225,20 @@
     <content type="html"><![CDATA[<p><a href="http://mr-dai.github.io/mongodb/2015/11/23/MongoDB-Distribution-Tutorial.html" target="_blank" rel="external">MongoDB 分布式部署教程</a></p>
 <a id="more"></a>
 <p>另外记一次数据库恢复过程。</p>
-<h3 id="u524D_u56E0"><a href="#u524D_u56E0" class="headerlink" title="前因"></a>前因</h3><p>服务器因为受到用户抢红包而超负荷Down机，在没有意识的情况下直接重启了服务，结果出现了所有服务都出现了问题，最终定位为数据库连接失败。立即上服务器查询，第一感觉是一切良好，没有什么问题，唯一一个奇怪的地方就是，每个分片的Replset 的数据都正常，但是mongoos的collections却少了好多。Google一番还是没结果，😂，正欲哭无泪的时候想起了阿里的同学，经过一番帮助，终于恢复正常。</p>
-<h3 id="u539F_u56E0"><a href="#u539F_u56E0" class="headerlink" title="原因"></a>原因</h3><p>出现collection数量不同步的原因原来是主shard出现了问题，重启服务的时候，不知什么情况下，shard1的Replset找不到master，然后shard1启动失败了，然后主shard变成了shard2，查来查去都查不到问题，因为一切看起来都那么正常。而少了的那部份collections就是shard1里面的未sharding的collection，未sharding的collection是不会同步到其他shard，所以当主shard是shard2的时候自然就少了那部份collections</p>
-<h3 id="u603B_u7ED3"><a href="#u603B_u7ED3" class="headerlink" title="总结"></a>总结</h3><p>😂，真是吓出一身冷汗，查不出问题也是因为经验不足和不够细心，也是对整套架构的了解不够，所以再次就一笔。</p>
+<h3 id="前因"><a href="#前因" class="headerlink" title="前因"></a>前因</h3><p>服务器因为受到用户抢红包而超负荷Down机，在没有意识的情况下直接重启了服务，结果出现了所有服务都出现了问题，最终定位为数据库连接失败。立即上服务器查询，第一感觉是一切良好，没有什么问题，唯一一个奇怪的地方就是，每个分片的Replset 的数据都正常，但是mongoos的collections却少了好多。Google一番还是没结果，😂，正欲哭无泪的时候想起了阿里的同学，经过一番帮助，终于恢复正常。</p>
+<h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>出现collection数量不同步的原因原来是主shard出现了问题，重启服务的时候，不知什么情况下，shard1的Replset找不到master，然后shard1启动失败了，然后主shard变成了shard2，查来查去都查不到问题，因为一切看起来都那么正常。而少了的那部份collections就是shard1里面的未sharding的collection，未sharding的collection是不会同步到其他shard，所以当主shard是shard2的时候自然就少了那部份collections</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>😂，真是吓出一身冷汗，查不出问题也是因为经验不足和不够细心，也是对整套架构的了解不够，所以再次就一笔。</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p><a href="http://mr-dai.github.io/mongodb/2015/11/23/MongoDB-Distribution-Tutorial.html">MongoDB 分布式部署教程</a></p>]]>
     
     </summary>
     
-      <category term="cluster" scheme="http://iamcc.github.io/tags/cluster/"/>
-    
       <category term="database" scheme="http://iamcc.github.io/tags/database/"/>
     
       <category term="mongodb" scheme="http://iamcc.github.io/tags/mongodb/"/>
+    
+      <category term="cluster" scheme="http://iamcc.github.io/tags/cluster/"/>
     
       <category term="sharding" scheme="http://iamcc.github.io/tags/sharding/"/>
     
@@ -321,13 +321,13 @@
 <td>JSON 格式化查看器。<a href="https://chrome.goo]]>
     </summary>
     
-      <category term="app" scheme="http://iamcc.github.io/tags/app/"/>
+      <category term="tools" scheme="http://iamcc.github.io/tags/tools/"/>
     
       <category term="chrome" scheme="http://iamcc.github.io/tags/chrome/"/>
     
-      <category term="extension" scheme="http://iamcc.github.io/tags/extension/"/>
+      <category term="app" scheme="http://iamcc.github.io/tags/app/"/>
     
-      <category term="tools" scheme="http://iamcc.github.io/tags/tools/"/>
+      <category term="extension" scheme="http://iamcc.github.io/tags/extension/"/>
     
       <category term="tools" scheme="http://iamcc.github.io/categories/tools/"/>
     
@@ -343,7 +343,7 @@
 <p>此文是基于<code>Mac</code>下的<code>Sublime text 3</code>版本的插件配置，不保证兼容<code>Sublime text 2</code>。</p>
 </blockquote>
 <a id="more"></a>
-<h2 id="u63D2_u4EF6"><a href="#u63D2_u4EF6" class="headerlink" title="插件"></a>插件</h2><table>
+<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><table>
 <thead>
 <tr>
 <th>名称</th>
@@ -457,15 +457,15 @@
 </tr>
 </tbody>
 </table>
-<h2 id="u76AE_u80A4"><a href="#u76AE_u80A4" class="headerlink" title="皮肤"></a>皮肤</h2><p>推荐一套看起来比较舒服的皮肤<code>Seti_UI</code></p>
-<h2 id="Sublime__u914D_u7F6E_u6587_u4EF6"><a href="#Sublime__u914D_u7F6E_u6587_u4EF6" class="headerlink" title="Sublime 配置文件"></a>Sublime 配置文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#10;&#9;&#34;Seti_SB_big&#34;: true,&#10;&#9;&#34;Seti_SB_med&#34;: true,&#10;&#9;&#34;Seti_no_blue_bar&#34;: true,&#10;&#9;&#34;Seti_tabs_med&#34;: true,&#10;&#9;&#34;Seti_tabs_small&#34;: true,&#10;&#9;&#34;additional_path_items&#34;:&#10;&#9;[&#10;&#9;&#9;&#34;/usr/local/bin&#34;&#10;&#9;],&#10;&#9;&#34;always_show_minimap_viewport&#34;: true,&#10;&#9;&#34;bold_folder_labels&#34;: true,&#10;&#9;&#34;color_scheme&#34;: &#34;Packages/User/SublimeLinter/Oceanic Next (SL).tmTheme&#34;,&#10;&#9;&#34;default_line_ending&#34;: &#34;unix&#34;,&#10;&#9;&#34;ensure_newline_at_eof_on_save&#34;: true,&#10;&#9;&#34;font_face&#34;: &#34;Fira Mono&#34;,&#10;&#9;&#34;ignored_packages&#34;:&#10;&#9;[&#10;&#9;&#9;&#34;JavaScript&#34;,&#10;&#9;&#9;&#34;Markdown&#34;,&#10;&#9;&#9;&#34;Vintage&#34;&#10;&#9;],&#10;&#9;&#34;line_padding_bottom&#34;: 3,&#10;&#9;&#34;line_padding_top&#34;: 3,&#10;&#9;&#34;overlay_scroll_bars&#34;: &#34;enabled&#34;,&#10;&#9;&#34;tab_size&#34;: 2,&#10;&#9;&#34;theme&#34;: &#34;Seti.sublime-theme&#34;,&#10;&#9;&#34;translate_tabs_to_spaces&#34;: true,&#10;&#9;&#34;trim_trailing_white_space_on_save&#34;: true,&#10;&#9;&#34;word_wrap&#34;: &#34;false&#34;&#10;&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="皮肤"><a href="#皮肤" class="headerlink" title="皮肤"></a>皮肤</h2><p>推荐一套看起来比较舒服的皮肤<code>Seti_UI</code></p>
+<h2 id="Sublime-配置文件"><a href="#Sublime-配置文件" class="headerlink" title="Sublime 配置文件"></a>Sublime 配置文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	&quot;Seti_SB_big&quot;: true,</div><div class="line">	&quot;Seti_SB_med&quot;: true,</div><div class="line">	&quot;Seti_no_blue_bar&quot;: true,</div><div class="line">	&quot;Seti_tabs_med&quot;: true,</div><div class="line">	&quot;Seti_tabs_small&quot;: true,</div><div class="line">	&quot;additional_path_items&quot;:</div><div class="line">	[</div><div class="line">		&quot;/usr/local/bin&quot;</div><div class="line">	],</div><div class="line">	&quot;always_show_minimap_viewport&quot;: true,</div><div class="line">	&quot;bold_folder_labels&quot;: true,</div><div class="line">	&quot;color_scheme&quot;: &quot;Packages/User/SublimeLinter/Oceanic Next (SL).tmTheme&quot;,</div><div class="line">	&quot;default_line_ending&quot;: &quot;unix&quot;,</div><div class="line">	&quot;ensure_newline_at_eof_on_save&quot;: true,</div><div class="line">	&quot;font_face&quot;: &quot;Fira Mono&quot;,</div><div class="line">	&quot;ignored_packages&quot;:</div><div class="line">	[</div><div class="line">		&quot;JavaScript&quot;,</div><div class="line">		&quot;Markdown&quot;,</div><div class="line">		&quot;Vintage&quot;</div><div class="line">	],</div><div class="line">	&quot;line_padding_bottom&quot;: 3,</div><div class="line">	&quot;line_padding_top&quot;: 3,</div><div class="line">	&quot;overlay_scroll_bars&quot;: &quot;enabled&quot;,</div><div class="line">	&quot;tab_size&quot;: 2,</div><div class="line">	&quot;theme&quot;: &quot;Seti.sublime-theme&quot;,</div><div class="line">	&quot;translate_tabs_to_spaces&quot;: true,</div><div class="line">	&quot;trim_trailing_white_space_on_save&quot;: true,</div><div class="line">	&quot;word_wrap&quot;: &quot;false&quot;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <blockquote>
 <p>注意这里我用到<code>Fira Mono</code>字体，没有的可以去下载安装，等宽字体，看起来比较舒服。</p>
 </blockquote>
-<h2 id="u5982_u4F55_u8BA9_Sublime__u5E2E_u6211_u68C0_u67E5_u4EE3_u7801_u683C_u5F0F"><a href="#u5982_u4F55_u8BA9_Sublime__u5E2E_u6211_u68C0_u67E5_u4EE3_u7801_u683C_u5F0F" class="headerlink" title="如何让 Sublime 帮我检查代码格式"></a>如何让 Sublime 帮我检查代码格式</h2><ol>
+<h2 id="如何让-Sublime-帮我检查代码格式"><a href="#如何让-Sublime-帮我检查代码格式" class="headerlink" title="如何让 Sublime 帮我检查代码格式"></a>如何让 Sublime 帮我检查代码格式</h2><ol>
 <li><code>npm i -g eslint@1 eslint-config-airbnb eslint-plugin-react</code></li>
 <li><p>在项目根目录创建<code>.eslintrc</code>文件内容</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#10;  &#34;extends&#34;: &#34;airbnb&#34;&#10;&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  &quot;extends&quot;: &quot;airbnb&quot;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 <li><p>现在只要在<code>Sublime</code>编写<code>javascript</code>就会提示错误了。</p>
 </li>
@@ -478,13 +478,13 @@
     
     </summary>
     
-      <category term="editor" scheme="http://iamcc.github.io/tags/editor/"/>
-    
-      <category term="exp" scheme="http://iamcc.github.io/tags/exp/"/>
+      <category term="tools" scheme="http://iamcc.github.io/tags/tools/"/>
     
       <category term="sublime" scheme="http://iamcc.github.io/tags/sublime/"/>
     
-      <category term="tools" scheme="http://iamcc.github.io/tags/tools/"/>
+      <category term="editor" scheme="http://iamcc.github.io/tags/editor/"/>
+    
+      <category term="exp" scheme="http://iamcc.github.io/tags/exp/"/>
     
       <category term="tools" scheme="http://iamcc.github.io/categories/tools/"/>
     
@@ -504,9 +504,9 @@
     
     </summary>
     
-      <category term="code" scheme="http://iamcc.github.io/tags/code/"/>
-    
       <category term="php" scheme="http://iamcc.github.io/tags/php/"/>
+    
+      <category term="code" scheme="http://iamcc.github.io/tags/code/"/>
     
       <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
     
@@ -526,9 +526,9 @@
     
     </summary>
     
-      <category term="shadowsocks" scheme="http://iamcc.github.io/tags/shadowsocks/"/>
-    
       <category term="ss" scheme="http://iamcc.github.io/tags/ss/"/>
+    
+      <category term="shadowsocks" scheme="http://iamcc.github.io/tags/shadowsocks/"/>
     
       <category term="vpn" scheme="http://iamcc.github.io/tags/vpn/"/>
     
@@ -553,9 +553,9 @@
     
     </summary>
     
-      <category term="rsa" scheme="http://iamcc.github.io/tags/rsa/"/>
-    
       <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
+    
+      <category term="rsa" scheme="http://iamcc.github.io/tags/rsa/"/>
     
       <category term="算法" scheme="http://iamcc.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
@@ -576,15 +576,15 @@
     
     </summary>
     
-      <category term="es2015" scheme="http://iamcc.github.io/tags/es2015/"/>
-    
-      <category term="es6" scheme="http://iamcc.github.io/tags/es6/"/>
-    
-      <category term="javascript" scheme="http://iamcc.github.io/tags/javascript/"/>
+      <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
     
       <category term="js" scheme="http://iamcc.github.io/tags/js/"/>
     
-      <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
+      <category term="javascript" scheme="http://iamcc.github.io/tags/javascript/"/>
+    
+      <category term="es6" scheme="http://iamcc.github.io/tags/es6/"/>
+    
+      <category term="es2015" scheme="http://iamcc.github.io/tags/es2015/"/>
     
       <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
     
@@ -603,13 +603,13 @@
     
     </summary>
     
-      <category term="cgo" scheme="http://iamcc.github.io/tags/cgo/"/>
+      <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
     
       <category term="go" scheme="http://iamcc.github.io/tags/go/"/>
     
       <category term="golang" scheme="http://iamcc.github.io/tags/golang/"/>
     
-      <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
+      <category term="cgo" scheme="http://iamcc.github.io/tags/cgo/"/>
     
       <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
     
@@ -628,15 +628,15 @@
     
     </summary>
     
-      <category term="c" scheme="http://iamcc.github.io/tags/c/"/>
-    
-      <category term="cgo" scheme="http://iamcc.github.io/tags/cgo/"/>
+      <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
     
       <category term="go" scheme="http://iamcc.github.io/tags/go/"/>
     
       <category term="golang" scheme="http://iamcc.github.io/tags/golang/"/>
     
-      <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
+      <category term="cgo" scheme="http://iamcc.github.io/tags/cgo/"/>
+    
+      <category term="c" scheme="http://iamcc.github.io/tags/c/"/>
     
       <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
     
@@ -655,11 +655,11 @@
     
     </summary>
     
+      <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
+    
       <category term="google" scheme="http://iamcc.github.io/tags/google/"/>
     
       <category term="search" scheme="http://iamcc.github.io/tags/search/"/>
-    
-      <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
     
       <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
     
