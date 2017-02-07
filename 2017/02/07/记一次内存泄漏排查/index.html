@@ -1,0 +1,27 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 记一次内存泄漏排查 · Something</title><meta name="description" content="记一次内存泄漏排查 - CC"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.jpg"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://iamcc.github.io/atom.xml" title="Something"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.jpg" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVES</a></li><li class="nav-list-item"><a href="https://twitter.com/arm_cc" target="_blank" class="nav-list-link">TWITTER</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">记一次内存泄漏排查</h1><div class="post-info">Feb 7, 2017</div><div class="post-content"><p>一个部署在阿里云上的服务突然有一天发现原来正常运行的程序突然挂了，这时候发现内存偏高，CPU 100%，一开始怀疑是不是代码造成的死循环 Bug，之后就开始了痛苦的排查过程。</p>
+<a id="more"></a>
+<h3 id="node-–prof"><a href="#node-–prof" class="headerlink" title="node –prof"></a>node –prof</h3><p><code>node --prof</code> 命令是用来排查性能问题的一个很有用的命令，他会生成一个 v8 的 log 文件。</p>
+<p>通过一番 Google，然后把原来的启动命令 <code>node app.js</code> 替换成 <code>node --prof app.js</code>，运行一段时间后生成了一个几百兆的分析文件，然后通过命令 <code>node --prof-process isoxxx</code> 分析。看到一大堆密密麻麻的字母，一开始不知道该怎么看，又一番 Google 之后大概看出来个一二，发现某个关键字出现很多，是 <code>mongoose</code> 库里的一个文件 <code>pool.js</code> ，看单词就可以猜到，应该是连接池，接着有一个关键字也出现频率很高，是 <code>timeout</code> ，猜测大概是操作超时了。然后顺着这个思路继续查。</p>
+<h3 id="node-heapdump"><a href="#node-heapdump" class="headerlink" title="node-heapdump"></a>node-heapdump</h3><p>从上面的排查大概猜测是数据库问题之后，因为只是猜测，所以又用到另外一个常用方法 <code>heapdump</code>，这个库可以很方便的通过代码来捕获当前内存的快照，然后通过导入 Chrome 来分析。经过对比分析之后，发现有一个对象 <code>system / JSArrayBufferData</code> 不断的增长而且很缓慢的释放，所以应该不算内存泄漏而是产生太快而消费太慢导致内存极速增长。而展开这个对象，里面又出现了两个关键字 <code>pool</code> <code>queue</code>，这时候大致上认为是请求的队列在增长。</p>
+<h3 id="node-–trace-gc-–trace-gc-verbose"><a href="#node-–trace-gc-–trace-gc-verbose" class="headerlink" title="node –trace_gc –trace_gc_verbose"></a>node –trace_gc –trace_gc_verbose</h3><p>经过上面的分析，虽然已经猜测到了大概，也 Review 了代码，已经差不多可以确认就是过快的写入数据库导致的，因为我在 Review 代码的时候竟然发现大量的循环操作写数据库 😂。但是我还是无法确认为什么在空闲的时候 CPU 已然是那么高，对比其他应用几乎不占用 CPU 资源，内存也很低。没办法，把命令换成 <code>node --trace_gc --trace_gc_verbose</code> 把每一次 GC 的过程都打出来，这时候我瞬间明白了为什么 CPU 一直在增长。通过 GC 日志知道，系统在频繁的进行 GC，v8 的 GC 分两种，一种是函数里面的临时变量，这些变量被放在 <code>new_space</code> 里面，基本上这些内存在下一次 <code>young gc</code> 的时候就会被回收，而没有被回收的内存会被放到 <code>old_space</code> ， <code>old_space</code> 的资源会存在比较久，而且只要没有被清除系统就会定时的执行 <code>full gc</code> ，这时候系统扫描这里面的资源是否有被释放然后回收。如果你的应用程序的 <code>old_space</code> 在不断的增加而没有被释放的话，基本上可以断定内存泄漏了。所以当 <code>old_space</code> 增大到某个程度的时候，这时候 GC 扫描这个对象就造成 CPU 100%，GC 本身就是一个耗 CPU 的操作，当前面 <code>old_space</code> 还没那么庞大的时候 GC 还能跑得动，运行一段时间之后 GC 已经跑不动了，这时候 CPU 已经 100%，所以程序也就挂了。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>后来跟工程师反应这个问题，并给出优化的方案，同时在简单的 Code Review 里面我还发现了几个问题：</p>
+<ol>
+<li><p>在没有设置限制的情况之下直接循环执行数据库更新操作。（由于 Nodejs 的异步特性，所有操作会在同一时间执行，造成数据库资源紧张导致部分执行 timeout 错误）</p>
+<p><code>解决</code>：限制并发执行的最大数量。</p>
+</li>
+<li><p>代码里面出现长长的一个 function，里面满满的 if-else，完全看不出代码逻辑是干什么的，非常混乱。</p>
+<p><code>解决</code>：把逻辑抽象出来，并用清晰的 function_name 来描述代码逻辑是干什么用的。</p>
+</li>
+<li><p>代码逻辑里面跑满了各种计算和数据库操作，每次 API 请求都要跑一遍，而大多数情况之下这些计算是浪费资源的，因为结果基本上是一样的。</p>
+<p><code>解决</code>：加入适当的缓存机制，避免重复的计算浪费资源。</p>
+</li>
+</ol>
+</div></article></div></main><footer><div class="paginator"><a href="/2016/06/23/php-json-encode-数组问题/" class="next">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'iamcc';
+var disqus_identifier = '2017/02/07/记一次内存泄漏排查/';
+var disqus_title = '记一次内存泄漏排查';
+var disqus_url = 'http://iamcc.github.io/2017/02/07/记一次内存泄漏排查/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//iamcc.disqus.com/count.js" async></script><div class="copyright"><p>© 2016 - 2017 <a href="http://iamcc.github.io">CC</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-73001310-1",'auto');ga('send','pageview');</script></body></html>
