@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://iamcc.github.io/"/>
-  <updated>2017-02-07T10:41:48.000Z</updated>
+  <updated>2017-02-08T00:49:34.000Z</updated>
   <id>http://iamcc.github.io/</id>
   
   <author>
@@ -14,6 +14,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【redis学习三】简单高可用redis架构实践</title>
+    <link href="http://iamcc.github.io/2017/02/08/%E3%80%90redis%E5%AD%A6%E4%B9%A0%E4%B8%89%E3%80%91%E7%AE%80%E5%8D%95%E9%AB%98%E5%8F%AF%E7%94%A8redis%E6%9E%B6%E6%9E%84%E5%AE%9E%E8%B7%B5/"/>
+    <id>http://iamcc.github.io/2017/02/08/【redis学习三】简单高可用redis架构实践/</id>
+    <published>2017-02-08T00:46:33.000Z</published>
+    <updated>2017-02-08T00:49:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://cuihuan.net/2017/02/05/redis3/" target="_blank" rel="external">【redis学习三】简单高可用redis架构实践</a></p>
+<a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://cuihuan.net/2017/02/05/redis3/&quot;&gt;【redis学习三】简单高可用redis架构实践&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
+    
+    
+      <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
+    
+      <category term="mark" scheme="http://iamcc.github.io/tags/mark/"/>
+    
+      <category term="redis" scheme="http://iamcc.github.io/tags/redis/"/>
+    
+      <category term="study" scheme="http://iamcc.github.io/tags/study/"/>
+    
+  </entry>
   
   <entry>
     <title>记一次内存泄漏排查</title>
@@ -218,9 +247,9 @@
       <category term="language" scheme="http://iamcc.github.io/categories/language/"/>
     
     
-      <category term="english" scheme="http://iamcc.github.io/tags/english/"/>
-    
       <category term="study" scheme="http://iamcc.github.io/tags/study/"/>
+    
+      <category term="english" scheme="http://iamcc.github.io/tags/english/"/>
     
       <category term="podcast" scheme="http://iamcc.github.io/tags/podcast/"/>
     
