@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://iamcc.github.io/"/>
-  <updated>2017-02-08T00:49:34.000Z</updated>
+  <updated>2017-02-13T08:28:02.000Z</updated>
   <id>http://iamcc.github.io/</id>
   
   <author>
@@ -14,6 +14,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>当 JSON.parse 遇上 UNprintable String</title>
+    <link href="http://iamcc.github.io/2017/02/13/%E5%BD%93-JSON-parse-%E9%81%87%E4%B8%8A-UNprintable-String/"/>
+    <id>http://iamcc.github.io/2017/02/13/当-JSON-parse-遇上-UNprintable-String/</id>
+    <published>2017-02-13T07:40:53.000Z</published>
+    <updated>2017-02-13T08:28:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="前因"><a href="#前因" class="headerlink" title="前因"></a>前因</h3><p>在为团队写一个自动化脚本的时候，有一个测试硬是跑不过，错误总是提示 <code>JSON parsing: Unexpected Token error</code> 。一开始我以为是 JSON 文本的错，就 <code>console.log</code> 打印出来，然后 <code>copy</code> 到命令行执行，诡异的执行正确了。为了确认我重复了这个动作 N 遍，事实证明就是那么诡异。</p>
+<a id="more"></a>
+<h3 id="后果"><a href="#后果" class="headerlink" title="后果"></a>后果</h3><p>导致的后果就是，这个自动化测试脚本硬是跑不通过了，只好进入苦逼的 Debug 模式。</p>
+<h3 id="找原因"><a href="#找原因" class="headerlink" title="找原因"></a>找原因</h3><p>因为已经尝试过 <code>copy</code> 文本出来执行转换 <code>JSON</code> 是没问题的，所以至少 <code>JSON</code> 文本是正确的，那为什么跑脚本就一直是错误的呢？可以肯定的是，机器不会骗人（所以说自动化测试是多么的重要）。</p>
+<p>然后抱着侥幸的心理，把文本 <code>trim</code> 了一下再 <code>JSON.parse</code> ，诡异的程序跑通了，我马上肯定（后面被自己打脸）是因为前后有空字符串导致的，还嘲讽了一下 <code>JavaScript</code> 怎么那么傻逼，这都不行，然后自己到命令行手动的加几个 <code>空格</code>  <code>回车</code> 什么的，结果 <code>JSON.parse</code> 通过了，好在只有自己知道 😂，要不然这脸丢大了。</p>
+<p>既然可以确定 <code>trim</code> 之后程序就正常了，那肯定就是有空白字符的存在，但是可以明显看到，我 <code>console.log</code> 出来的字符串是没有空白的，不服气，我用程序对比了一下字符串，然而程序告诉我 <code>trim</code> 之后字符串的确发生了改变。这时我已经以为我疯了，然而再侥幸的，我把两次字符串转换成 <code>Buffer</code> 输出，这时候答案就出来了（又是一个巨大的坑）。</p>
+<p><img src="/2017/02/13/当-JSON-parse-遇上-UNprintable-String/00A3B369-A45D-4DBA-955C-1C53C391E6D7.png" alt="00A3B369-A45D-4DBA-955C-1C53C391E6D7"></p>
+<p>可以看到 <code>trim</code> 之前字符串前面多了三个字节 <code>ef</code> <code>bb</code> <code>bf</code> ，这个坑是跨平台编辑很容易遇上的一个问题，因为用 <code>unix</code> 系统久了，忘记了这个梗。</p>
+<h3 id="UTF-8-With-BOM"><a href="#UTF-8-With-BOM" class="headerlink" title="UTF-8 With BOM"></a>UTF-8 With BOM</h3><p><code>BOM (Byte Order Mark)</code> , 微软在自己的UTF-8格式的文本文件之前加上了EF BB BF三个字节, windows上面的notepad等程序就是根据这三个字节来确定一个文本文件是ASCII的还是UTF-8的, 然而这个只是微软暗自作的标记, 其它平台上并没有对UTF-8文本文件做个这样的标记。</p>
+<h3 id="导致的原因"><a href="#导致的原因" class="headerlink" title="导致的原因"></a>导致的原因</h3><p>那为什么唯独这个接口会这样呢？提出问题之后一位同事查看了 Git History，发现这个 BOM 是在两年前某次更新不小心引入的，😂。</p>
+<h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><p>如前面描述一样，把 <code>String</code> <code>trim</code> 一下就可以了，然后自动化测试脚本就正常了。</p>
+<p><img src="/2017/02/13/当-JSON-parse-遇上-UNprintable-String/F6449205-B1D2-4E4E-BDB7-9AA5CB41B74A.png" alt="F6449205-B1D2-4E4E-BDB7-9AA5CB41B74A"></p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>所以我总是相信，机器不会骗人的，眼见并不一定为实，和人总是会犯错误的。</p>
+<p>要保证自己在干的事情不是在制造 Bug，就需要一个验证自己在干的事情到底是不是产生了很多 Bug，这个验证的东西就叫做 <code>自动化回归测试</code> ，当你修改了程序不知道是否导致过往的程序的运行结果的时候，跑一遍就知道了。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;前因&quot;&gt;&lt;a href=&quot;#前因&quot; class=&quot;headerlink&quot; title=&quot;前因&quot;&gt;&lt;/a&gt;前因&lt;/h3&gt;&lt;p&gt;在为团队写一个自动化脚本的时候，有一个测试硬是跑不过，错误总是提示 &lt;code&gt;JSON parsing: Unexpected Token error&lt;/code&gt; 。一开始我以为是 JSON 文本的错，就 &lt;code&gt;console.log&lt;/code&gt; 打印出来，然后 &lt;code&gt;copy&lt;/code&gt; 到命令行执行，诡异的执行正确了。为了确认我重复了这个动作 N 遍，事实证明就是那么诡异。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
+    
+    
+      <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
+    
+      <category term="json" scheme="http://iamcc.github.io/tags/json/"/>
+    
+      <category term="bug" scheme="http://iamcc.github.io/tags/bug/"/>
+    
+  </entry>
   
   <entry>
     <title>【redis学习三】简单高可用redis架构实践</title>
@@ -36,11 +76,11 @@
     
       <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
     
+      <category term="study" scheme="http://iamcc.github.io/tags/study/"/>
+    
       <category term="mark" scheme="http://iamcc.github.io/tags/mark/"/>
     
       <category term="redis" scheme="http://iamcc.github.io/tags/redis/"/>
-    
-      <category term="study" scheme="http://iamcc.github.io/tags/study/"/>
     
   </entry>
   
@@ -247,9 +287,9 @@
       <category term="language" scheme="http://iamcc.github.io/categories/language/"/>
     
     
-      <category term="study" scheme="http://iamcc.github.io/tags/study/"/>
-    
       <category term="english" scheme="http://iamcc.github.io/tags/english/"/>
+    
+      <category term="study" scheme="http://iamcc.github.io/tags/study/"/>
     
       <category term="podcast" scheme="http://iamcc.github.io/tags/podcast/"/>
     
@@ -681,7 +721,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html&quot;&gt;http://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html&quot;&gt;http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html&lt;/a&gt;&lt;br&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html&quot;&gt;http://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html&quot;&gt;http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
@@ -708,7 +748,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;http://es6.ruanyifeng.com/&quot;&gt;http://es6.ruanyifeng.com/&lt;/a&gt;&lt;br&gt;
+      &lt;p&gt;&lt;a href=&quot;http://es6.ruanyifeng.com/&quot;&gt;http://es6.ruanyifeng.com/&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
@@ -739,7 +779,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;https://tiancaiamao.gitbooks.io/go-internals/content/zh/&quot;&gt;https://tiancaiamao.gitbooks.io/go-internals/content/zh/&lt;/a&gt;&lt;br&gt;
+      &lt;p&gt;&lt;a href=&quot;https://tiancaiamao.gitbooks.io/go-internals/content/zh/&quot;&gt;https://tiancaiamao.gitbooks.io/go-internals/content/zh/&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
@@ -768,7 +808,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;http://www.hoverlees.com/blog/?p=1465&quot;&gt;http://www.hoverlees.com/blog/?p=1465&lt;/a&gt;&lt;br&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.hoverlees.com/blog/?p=1465&quot;&gt;http://www.hoverlees.com/blog/?p=1465&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
