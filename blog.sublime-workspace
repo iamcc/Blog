@@ -1,0 +1,2177 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"findsub",
+				"FindStringSubmatch	[]string ƒ"
+			],
+			[
+				"wri",
+				"WriteString	n int, err error ƒ"
+			],
+			[
+				"fnd",
+				"Find	*goquery.Selection ƒ"
+			],
+			[
+				"doc",
+				"doc2	*goquery.Document ν"
+			],
+			[
+				"cip",
+				"ciphertext	[]byte ν"
+			],
+			[
+				"p",
+				"plantext	[]byte ν"
+			],
+			[
+				"deco",
+				"DecodeString	[]byte, error ƒ"
+			],
+			[
+				"chi",
+				"ciphertext	[]byte ν"
+			],
+			[
+				"pro",
+				"progress"
+			],
+			[
+				"ver",
+				"versions	[]string ν"
+			],
+			[
+				"st",
+				"strings	 package ρ"
+			],
+			[
+				"check",
+				"checkDeleted	 ƒ"
+			],
+			[
+				"htt",
+				"httpGet	[]byte ƒ"
+			],
+			[
+				"raw",
+				"RawQuery	string ν"
+			],
+			[
+				"s",
+				"Scheme	string ν"
+			],
+			[
+				"pa",
+				"Parse	url *url.URL, err error ƒ"
+			],
+			[
+				"coo",
+				"AddCookie	 ƒ"
+			],
+			[
+				"get",
+				"getUUID	string ƒ"
+			],
+			[
+				"mat",
+				"MatchString	bool ƒ"
+			],
+			[
+				"qr",
+				"getQRCode	 ƒ"
+			],
+			[
+				"cm",
+				"Command	*exec.Cmd ƒ"
+			],
+			[
+				"sprin",
+				"Sprintf	string ƒ"
+			],
+			[
+				"qu",
+				"QueryEscape	string ƒ"
+			],
+			[
+				"corp",
+				"corp	*Corp ν"
+			],
+			[
+				"fun",
+				"func (*Corp)	func (...) {...} ʂ"
+			],
+			[
+				"new",
+				"NewCorpClient	*corp.CorpClient ƒ"
+			],
+			[
+				"cor",
+				"corp	 package ρ"
+			],
+			[
+				"text",
+				"Text	struct ʈ"
+			],
+			[
+				"newdefa",
+				"NewDefaultAccessTokenServer	srv *corp.DefaultAccessTokenServer ƒ"
+			],
+			[
+				"requ",
+				"required"
+			],
+			[
+				"erro",
+				"error"
+			],
+			[
+				"onUp",
+				"onUploadProgress"
+			],
+			[
+				"resi",
+				"resize"
+			],
+			[
+				"width",
+				"width"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"File",
+				"FileReader"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"error",
+				"error_msg"
+			],
+			[
+				"clea",
+				"clearTimeout〔function〕"
+			],
+			[
+				"tra",
+				"trackEvent〔variable〕"
+			],
+			[
+				"user",
+				"userVO"
+			],
+			[
+				"_",
+				"_wxJSAPI"
+			],
+			[
+				"track",
+				"trackId"
+			],
+			[
+				"sty",
+				"style"
+			],
+			[
+				"br",
+				"br	border-right"
+			],
+			[
+				"real",
+				"ReadFile	[]byte, error ƒ"
+			],
+			[
+				"com",
+				"MustCompile	*regexp.Regexp ƒ"
+			],
+			[
+				"ls",
+				"list-style"
+			],
+			[
+				"html",
+				"html5	Simple HTML5 Boilerplate"
+			],
+			[
+				"name",
+				"name=\"PageBgColor"
+			],
+			[
+				"label",
+				"label=\"页面背景颜色："
+			],
+			[
+				"Bu",
+				"Button"
+			],
+			[
+				"imp",
+				"import〔keyword〕"
+			],
+			[
+				"gridx",
+				"GRID_DELTA_X"
+			],
+			[
+				"FR",
+				"FRAME_WEEK_W"
+			],
+			[
+				"grid",
+				"GRID_DELTA_Y"
+			],
+			[
+				"grifi",
+				"GRID_FIRST_X"
+			],
+			[
+				"GRI",
+				"GRID_FIRST_Y"
+			],
+			[
+				"prin",
+				"print_other_lines"
+			],
+			[
+				"date",
+				"datetime"
+			],
+			[
+				"pri",
+				"print_first_line"
+			],
+			[
+				"toda",
+				"today_x"
+			],
+			[
+				"fram",
+				"frame_today"
+			],
+			[
+				"mda",
+				"max_day"
+			],
+			[
+				"create",
+				"app_layer_create_text"
+			],
+			[
+				"app_wn",
+				"app_window_add_layer"
+			],
+			[
+				"P_",
+				"P_Window"
+			],
+			[
+				"Com",
+				"Components〔variable〕"
+			],
+			[
+				"desc",
+				"descreaseAsync"
+			],
+			[
+				"push",
+				"pushPath"
+			],
+			[
+				"reduc",
+				"reducers"
+			],
+			[
+				"compon",
+				"components/"
+			],
+			[
+				"Count",
+				"Counters"
+			],
+			[
+				"Rout",
+				"Router〔variable〕"
+			],
+			[
+				"sync",
+				"syncReduxAndRouter〔variable〕"
+			],
+			[
+				"fina",
+				"finalCreateStore〔variable〕"
+			],
+			[
+				"crea",
+				"createStore〔variable〕"
+			],
+			[
+				"router",
+				"routerReducer"
+			],
+			[
+				"app",
+				"app.less"
+			],
+			[
+				"scri",
+				"script	<script>"
+			],
+			[
+				"inc",
+				"increment"
+			],
+			[
+				"Butt",
+				"ButtonArea"
+			],
+			[
+				"del",
+				"delay"
+			],
+			[
+				"Coun",
+				"Counters"
+			],
+			[
+				"Cou",
+				"CounterActions"
+			],
+			[
+				"bind",
+				"bindActionCreators"
+			],
+			[
+				"store",
+				"storeDebug〔variable〕"
+			],
+			[
+				"rou",
+				"routes"
+			],
+			[
+				"modu",
+				"module〔variable〕"
+			],
+			[
+				"webpa",
+				"webpack/"
+			],
+			[
+				"webpac",
+				"webpack-dev-server/"
+			],
+			[
+				"ser",
+				"$service〔variable〕"
+			],
+			[
+				"arrmer",
+				"array_merge〔function〕"
+			],
+			[
+				"Rec",
+				"Rec_Clean_A〔constant〕"
+			],
+			[
+				"or",
+				"$order〔variable〕"
+			],
+			[
+				"Rec_cal",
+				"Rec_Clean_A"
+			],
+			[
+				"mt_rand",
+				"mt_srand"
+			],
+			[
+				"print",
+				"print_r〔function〕"
+			],
+			[
+				"impl",
+				"implode〔function〕"
+			],
+			[
+				"outpu",
+				"$output_state〔variable〕"
+			],
+			[
+				"base",
+				"base_convert〔function〕"
+			],
+			[
+				"output",
+				"output_state"
+			],
+			[
+				"strrep",
+				"str_repeat〔function〕"
+			],
+			[
+				"00",
+				"00000000"
+			],
+			[
+				"0000",
+				"00000000"
+			],
+			[
+				"1",
+				"192.168.1.12"
+			],
+			[
+				"sub",
+				"substr〔function〕"
+			],
+			[
+				"acon",
+				"$ac_on_of〔variable〕"
+			],
+			[
+				"dim",
+				"$dim0_level〔variable〕"
+			],
+			[
+				"subsr",
+				"substr"
+			],
+			[
+				"data",
+				"$data〔variable〕"
+			],
+			[
+				"getname",
+				"getprotobyname〔function〕"
+			],
+			[
+				"hex",
+				"hexdec〔function〕"
+			],
+			[
+				"socke",
+				"$socket〔variable〕"
+			],
+			[
+				"sock",
+				"$socket〔variable〕"
+			],
+			[
+				"SOL",
+				"SOL_UDP〔constant〕"
+			],
+			[
+				"soc",
+				"$socket〔variable〕"
+			],
+			[
+				"binto",
+				"bin2hex〔function〕"
+			],
+			[
+				"ben",
+				"RunBenchmarks	 ƒ"
+			],
+			[
+				"handltunn",
+				"handleProxyTunnelClose	 ƒ"
+			],
+			[
+				"par",
+				"ParseQuery	m url.Values, err error ƒ"
+			],
+			[
+				"pir",
+				"Println	 ƒ"
+			],
+			[
+				"fo",
+				"Form	url.Values ν"
+			],
+			[
+				"m",
+				"RWMutex	struct ʈ"
+			],
+			[
+				"all",
+				"allDevices	map[*net.Conn]string ν"
+			],
+			[
+				"con",
+				"Conn	interface ¡"
+			],
+			[
+				"esca",
+				"QueryEscape	string ƒ"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					""
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Test"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Install"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Cross-Compile (Interactive)"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/GoSublime/GoSublime.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Golang Build/Go.sublime-build",
+				"Cross-Compile (Interactive)"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					""
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Test"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Install"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Cross-Compile (Interactive)"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/GoSublime/GoSublime.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Golang Build/Go.sublime-build",
+				"Test"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Nodejs/Nodejs.sublime-build",
+					""
+				],
+				[
+					"Packages/User/JSX.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/JSX.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Nodejs/Nodejs.sublime-build",
+					""
+				],
+				[
+					"Packages/User/jsx.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/jsx.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/SASS Build/SASS - Compressed.sublime-build",
+					""
+				],
+				[
+					"Packages/SASS Build/SASS.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/SASS Build/SASS.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 342.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"space",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"reid",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"upda",
+				"SVN: Update"
+			],
+			[
+				"svn file res",
+				"SVN: (File) Resolve, Interactive…"
+			],
+			[
+				"svn res",
+				"SVN: Resolve Tree Conflict, Interactive…"
+			],
+			[
+				"status",
+				"SVN: Status"
+			],
+			[
+				"setgo",
+				"Set Syntax: GoSublime: Go"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"can",
+				"Go: Cancel Build"
+			],
+			[
+				"cance",
+				"Go: Cancel Build"
+			],
+			[
+				"jsc",
+				"JSCS Formatter: Format this file"
+			],
+			[
+				"canc",
+				"Go: Cancel Build"
+			],
+			[
+				"cancl",
+				"Go: Cancel Build"
+			],
+			[
+				"comm",
+				"SVN: Commit…"
+			],
+			[
+				"clal",
+				"File: Close All"
+			],
+			[
+				"co",
+				"SVN: Commit…"
+			],
+			[
+				"sta",
+				"SVN: Status"
+			],
+			[
+				"rever",
+				"SVN: (File) Revert"
+			],
+			[
+				"com",
+				"SVN: Commit…"
+			],
+			[
+				"reiden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"forma",
+				"JSCS Formatter: Format this file"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"showall",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"next",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"upgar",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"viewpo",
+				"Snippet: ViewPort"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"pacali",
+				"Package Control: List Packages"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"cloal",
+				"File: Close All"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"u",
+				"SVN: Update"
+			],
+			[
+				"GoSublime: bro",
+				"GoSublime: Browse Packages"
+			],
+			[
+				"error",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"lint",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"upgrad",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"update",
+				"Emmet: Update Image Size"
+			],
+			[
+				"showe",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"copypa",
+				"File: Copy Path as URI"
+			],
+			[
+				"setjava",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"tag",
+				"Tag: Auto-Format Tags on Document"
+			],
+			[
+				"linter",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"showal",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"linterto",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"jscs",
+				"JSCS Formatter: Format this file"
+			],
+			[
+				"copyna",
+				"File: Copy Name"
+			],
+			[
+				"closeal",
+				"File: Close All"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"copy",
+				"File: Copy Path"
+			],
+			[
+				"co m m",
+				"SVN: Commit…"
+			],
+			[
+				"filelog",
+				"SVN: (File) Log"
+			],
+			[
+				"previ",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"upgra",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"trim",
+				"Snippet: $.trim()"
+			],
+			[
+				"svn commit",
+				"SVN: Commit…"
+			],
+			[
+				"fo",
+				"phpfmt: format now"
+			],
+			[
+				"clo",
+				"File: Close All"
+			],
+			[
+				"cloa",
+				"File: Close All"
+			],
+			[
+				"setc",
+				"Set Syntax: C"
+			],
+			[
+				"log",
+				"SVN: (Folder) Log"
+			],
+			[
+				"svn up",
+				"SVN: Update"
+			],
+			[
+				"svn comm",
+				"SVN: Commit…"
+			],
+			[
+				"svn add",
+				"SVN: Add, Interactive…"
+			],
+			[
+				"svn igno",
+				"SVN: (Folder) Unignore"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"javascr",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"wr",
+				"Word Wrap: Toggle"
+			],
+			[
+				"close",
+				"File: Close All"
+			],
+			[
+				"git add",
+				"Git: Add All"
+			],
+			[
+				"ident",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"showerr",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"for",
+				"phpfmt: format now"
+			],
+			[
+				"format",
+				"phpfmt: format now"
+			],
+			[
+				"cl",
+				"File: Close All"
+			],
+			[
+				"rwap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"goim",
+				"GoImports"
+			],
+			[
+				"GoSublime: PACK",
+				"GoSublime: Browse Packages"
+			],
+			[
+				"GoSublime: pac",
+				"GoSublime: Browse Packages"
+			],
+			[
+				"GoSublime: pack",
+				"GoSublime: Browse Packages"
+			],
+			[
+				"set go",
+				"Set Syntax: GoSublime: Go"
+			],
+			[
+				"remopack",
+				"Package Control: Remove Package"
+			],
+			[
+				"GoSublime: add",
+				"GoSublime: Add/Remove package"
+			],
+			[
+				"GoSublime: remove",
+				"GoSublime: Add/Remove package"
+			],
+			[
+				"GoSublime: ",
+				"GoSublime: Activate 9o"
+			],
+			[
+				"removepac",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"GoSublime: cancle",
+				"GoSublime: Show/Cancel pending tasks"
+			],
+			[
+				"GoSublime: bropa",
+				"GoSublime: Browse Packages"
+			],
+			[
+				"GoSublime: brw",
+				"GoSublime: Browse Files"
+			],
+			[
+				"show",
+				"GoSublime: Show/Cancel pending tasks"
+			],
+			[
+				"cancel",
+				"Go: Cancel Build"
+			],
+			[
+				"dif",
+				"SVN: Diff, Remote"
+			],
+			[
+				"php",
+				"phpfmt: format now"
+			],
+			[
+				"reide",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"filerev",
+				"SVN: (File) Revert"
+			],
+			[
+				"diff",
+				"SVN: Diff, Custom Revisions…"
+			],
+			[
+				"svnlog",
+				"SVN: (File) Log"
+			],
+			[
+				"all",
+				"File: Close All"
+			],
+			[
+				"commi",
+				"SVN: Commit…"
+			],
+			[
+				"wra",
+				"Word Wrap: Toggle"
+			],
+			[
+				"uda",
+				"SVN: Update"
+			],
+			[
+				"svn diff",
+				"SVN: (File) Diff, Remote"
+			],
+			[
+				"svn sta",
+				"SVN: Status"
+			],
+			[
+				"svn rever",
+				"SVN: (File) Revert"
+			],
+			[
+				"sass",
+				"SassBeautify"
+			],
+			[
+				"auto",
+				"Autoprefix CSS"
+			],
+			[
+				"autop",
+				"Autoprefix CSS"
+			],
+			[
+				"synjad",
+				"Set Syntax: Jade"
+			],
+			[
+				"syn java",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"syn html",
+				"Set Syntax: HTML"
+			],
+			[
+				"autota",
+				"Tag: Auto-Format Tags on Document"
+			],
+			[
+				"statu",
+				"SVN: Status"
+			],
+			[
+				"aut",
+				"Autoprefix CSS"
+			],
+			[
+				"diffile",
+				"SFTP: Diff Remote File"
+			],
+			[
+				"commit",
+				"SVN: Commit…"
+			],
+			[
+				"bea",
+				"SassBeautify"
+			],
+			[
+				"commt",
+				"SVN: Commit…"
+			],
+			[
+				"filerever",
+				"SVN: (File) Revert"
+			],
+			[
+				"filere",
+				"SVN: (File) Revert"
+			],
+			[
+				"revert",
+				"SVN: (File) Revert"
+			],
+			[
+				"COMM",
+				"SVN: Commit…"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 484.0,
+		"history":
+		[
+			"php oealy.php",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": true
+	},
+	"expanded_folders":
+	[
+		"/Users/cc/blog",
+		"/Users/cc/blog/source",
+		"/Users/cc/blog/source/_posts"
+	],
+	"file_history":
+	[
+		"/Users/cc/blog/source/_posts/快速提高Android开发效率的Web工具.md",
+		"/Users/cc/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/Default (OSX).sublime-keymap",
+		"/Users/cc/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/cc/blog/package.json",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/hotel/views/mobile/room_type.volt",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/hotel/script/mobile/components/room_type/index.js",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/hotel/script/mobile/components/room_type/index.js.mine",
+		"/Users/cc/Downloads/通用二次开发包V4.0.1.9/sdtapi.h",
+		"/Users/cc/Downloads/通用二次开发包V4.0.1.9/dll.go",
+		"/Users/cc/Downloads/win.go",
+		"/Users/cc/.bash_profile",
+		"/usr/local/Cellar/go/1.5.3/libexec/src/syscall/syscall_darwin.go",
+		"/usr/local/Cellar/go/1.5.3/libexec/src/syscall/dll_windows.go",
+		"/Users/cc/Downloads/crawler.go",
+		"/Users/cc/Downloads/log",
+		"/Users/cc/Downloads/1.c",
+		"/Users/cc/Downloads/a.go",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/hotel/script/mobile/webpack.config.js",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452848760/SVN",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/hotel/script/mobile/package.json",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/hotel/script/mobile/node_modules/moment/moment.js",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/hotel/script/mobile/components/booking/index.js",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/hotel/script/mobile/components/booking/components/OrderForm.vue",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/hotel/script/mobile/components/booking/components/Member.vue",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/hotel/script/mobile/components/booking/components/Index.vue",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/hotel/script/mobile/components/room_type/components/App.vue",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452847873/SVN",
+		"/Users/cc/Documents/code/utuapp/sftp-config.json",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452847735/SVN",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452847615/SVN",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/hotel/script/mobile/.eslintrc",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/hotel/script/mobile/components/mine/index.js",
+		"/Users/cc/Downloads/f/.eslintrc",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452843062/SVN",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452843019/SVN",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452832434/SVN",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452832275/SVN",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452831078/SVN",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452831032/SVN",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/hotel/script/mobile/dist/booking.828baab99e999e2c4974.js",
+		"/Users/cc/Desktop/s.go",
+		"/Users/cc/Desktop/wdf.go",
+		"/Users/cc/Documents/code/utuapp/public/components/SignForm.vue",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/hotel/script/mobile/booking.html",
+		"/Users/cc/Library/Application Support/Sublime Text 3/Packages/User/ViewPort.sublime-snippet",
+		"/Users/cc/Library/Application Support/Sublime Text 3/Packages/User/ViewPort.sublime-package",
+		"/Users/cc/Library/Application Support/Sublime Text 3/Installed Packages/ViewPort.sublime-package",
+		"/Users/cc/Library/Application Support/Sublime Text 3/Installed Packages/Bootstrap 3 Snippets.sublime-package",
+		"/Users/cc/Library/Application Support/Sublime Text 3/Packages/Babel Snippets/react_componentDidMount_(class).sublime-snippet",
+		"/Users/cc/Documents/code/utuapp/public/components/fragment/TextareaCell.vue",
+		"/Users/cc/Documents/code/utuapp/app/config/config.php",
+		"/Users/cc/Documents/code/utuapp/release.json",
+		"/Users/cc/Documents/code/utuapp/utuapp.sublime-project",
+		"/Users/cc/Documents/code/utuapp/ReadMe.txt",
+		"/Users/cc/Desktop/wx.go",
+		"/Users/cc/go/src/github.com/gogap/wechat/corp/access_token_server.go",
+		"/Users/cc/go/src/github.com/gogap/wechat/corp/error.go",
+		"/Users/cc/go/src/github.com/gogap/wechat/corp/message/send/client.go",
+		"/Users/cc/go/src/github.com/gogap/wechat/corp/message/send/doc.go",
+		"/Users/cc/go/src/github.com/gogap/wechat/corp/access_token_server.debug.go",
+		"/Users/cc/Documents/code/utuapp/public/components/Upload.vue",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452573737/SVN",
+		"/Users/cc/Library/Application Support/Unclutter/FileStorage/ios.ovpn",
+		"/Users/cc/Desktop/ios.ovpn",
+		"/Users/cc/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/cc/Library/Application Support/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Users/cc/Library/Application Support/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/Users/cc/Library/Application Support/Sublime Text 3/Packages/User/JSCS-Formatter.sublime-settings",
+		"/Users/cc/Library/Application Support/Sublime Text 3/Packages/JSCS-Formatter/JSCS-Formatter.sublime-settings",
+		"/Users/cc/Library/Application Support/Sublime Text 3/Packages/QuoteHTML/README.md",
+		"/Users/cc/Library/Application Support/Sublime Text 3/Packages/User/GoSublime/osx-x64/log.txt",
+		"/Users/cc/Library/Application Support/Sublime Text 3/Packages/User/golang.sublime-settings",
+		"/Users/cc/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/cc/Documents/code/utuapp/public/components/node_modules/vue-weui/components/cells/cell-textarea.vue",
+		"/Users/cc/Documents/code/utuapp/public/components/node_modules/vue-weui/dist/vue-weui.min.js",
+		"/Users/cc/Documents/code/utuapp/public/components/node_modules/vue-weui/dist/vue-weui.js",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452509163/SVN",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452506340/SVN",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452506285/SVN",
+		"/Users/cc/Documents/code/utuapp/app/modules/uvote/controllers/MobileController.php",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/debug/views/debug3/dmxMultiUpload.md",
+		"/Users/cc/Documents/code/utuapp/public/assets/script/mobile_common/dmxupload-components.js",
+		"/Users/cc/Documents/code/utuapp/public/assets/script/common/form-components.js",
+		"/Users/cc/Documents/code/utuapp/app/modules/tools/controllers/ApiController.php",
+		"/Users/cc/Documents/code/utuapp/public/components/Lazyload.js",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452495271/SVN",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452495161/SVN",
+		"/Users/cc/Documents/code/utuapp/public/assets/script/mobile_common/lazyloadimg.js",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/hotel/script/mobile/room-type.html",
+		"/Users/cc/Documents/code/utuapp/public/app/base_views/tpl_mobile_vue_blank.volt",
+		"/Users/cc/Documents/code/utuapp/app/modules/proxy/library/ProxyListener.php",
+		"/Users/cc/Documents/code/utuapp/app/modules/proxy/models/DeviceVO.php",
+		"/Users/cc/Documents/code/utuapp/app/modules/tools/library/ToolsListener.php",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452476462/SVN",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452252754/SVN",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452252654/SVN",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/hotel/script/mobile/components/booking/index.js.r447",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452252490/SVN",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/hotel/script/mobile/dist/roomType.js",
+		"/Users/cc/Documents/code/utuapp/public/components/Touch.js",
+		"/Users/cc/Documents/code/utuapp/app/modules/tools/controllers/MobileController.php",
+		"/Users/cc/Documents/code/utuapp/public/assets/script/mobile_common/weixin-components.js",
+		"/Users/cc/Documents/code/utuapp/public/components/Wx.js",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452246805/SVN",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452246749/SVN",
+		"/Users/cc/Documents/code/utuapp/public/bower_components/vue-touch/vue-touch.js",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452244662/SVN",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452241563/SVN",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452241450/SVN",
+		"/Users/cc/Documents/code/utuapp/app/modules/hotel/controllers/MobileController.php",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452240007/SVN",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452239960/SVN",
+		"/Users/cc/Documents/code/utuapp/app/modules/article/controllers/MobileController.php",
+		"/Users/cc/Documents/code/utuapp/public/components/Piwik.vue",
+		"/Users/cc/Documents/code/utuapp/app/libraries/application/controllers/BaseMobileController.php",
+		"/Users/cc/Desktop/fx.go",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452161266/SVN",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/hotel/views/mobile/booking.volt",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/hotel/views/mobile/mine.volt",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/hotel/views/mobile/order.volt",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/hotel/views/mobile/protocol.volt",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/hotel/views/mobile/room_select.volt",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452160911/SVN",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452159831/SVN",
+		"/var/folders/m7/72g47c_15msdncp6zlvdkldm0000gn/T/sublime-svn-1452159686/SVN",
+		"/Users/cc/Documents/code/utuapp/public/assets/script/mobile_common/track-components.js",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/countdown/script/mobile/money/detail.js",
+		"/Users/cc/Documents/code/utuapp/public/app/modules/barrage/script/mobile/detail.js"
+	],
+	"find":
+	{
+		"height": 112.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"<project>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\n\n",
+			"\n",
+			"SDT_OpenPort",
+			"citylist",
+			"0101",
+			"c999",
+			"dview_info_item",
+			"doc2",
+			"beijing",
+			"sub",
+			"sub_10A179C",
+			"cipher",
+			"ciphertext",
+			"src",
+			"dst",
+			"strmeam",
+			"prepareConfig",
+			"locale_locales__getLocale",
+			"loadLocale",
+			"components",
+			"main",
+			"common",
+			"semi",
+			"semicolon",
+			"babel!eslint",
+			"\"",
+			"PC",
+			"beta",
+			"arr",
+			"body",
+			"info",
+			"baseUrl string, info *BaseInfo",
+			"info",
+			"memberList",
+			"_baseRequest",
+			"BaseRequest",
+			"NickName",
+			"UserName",
+			"profile",
+			"UserName",
+			"value",
+			"httpPost",
+			"body",
+			"info",
+			"rst",
+			"string",
+			"data",
+			"body",
+			"rawurl",
+			"string",
+			"url",
+			"client",
+			"body",
+			"urlStr",
+			"err",
+			"\"",
+			"condition",
+			"body",
+			"urlStr",
+			"qrPath",
+			"Open",
+			"\"qr.jpg\"",
+			"wx782c26e4c19acffb",
+			"body",
+			"appid",
+			"format",
+			"python",
+			"hello",
+			"CELL",
+			"footer",
+			"body",
+			"Body",
+			"body",
+			"content",
+			"token",
+			"Error",
+			"ok",
+			"erro",
+			"secrect",
+			"Send",
+			"send",
+			"https://api.weixin.qq.com/cgi-bin/token",
+			"Token",
+			"token",
+			"Token",
+			"tokenDaemon",
+			"CommonMessageHeader",
+			"Content",
+			"Text",
+			"ToUser",
+			"AgentId",
+			"MsgType",
+			"AccessTokenServer",
+			"corpSecret",
+			"httpClient",
+			"success",
+			"false",
+			"sy",
+			"twoWay",
+			"true",
+			"String",
+			"value",
+			" :",
+			" ",
+			"上传失败",
+			"this",
+			"img",
+			"500",
+			"success",
+			"onerror",
+			"false",
+			"Number",
+			"width",
+			"Wx",
+			"_isUploadSupported",
+			"tmp_image",
+			"ImageData",
+			".post",
+			"upload",
+			"imageupload",
+			"upload",
+			"uplo",
+			"files",
+			"Wx",
+			"dev.",
+			"scroll",
+			"_value",
+			"lazyload"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 69.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.9o:///Users/cc/Desktop/17app/lib":
+	{
+		"height": 168.0
+	},
+	"output.9o:///Users/cc/Desktop/redpack":
+	{
+		"height": 168.0
+	},
+	"output.9o:///Users/cc/Downloads/tls-tunnle":
+	{
+		"height": 168.0
+	},
+	"output.9o:///Users/cc/go/src/17app":
+	{
+		"height": 168.0
+	},
+	"output.9o:///Users/cc/go/src/17app/lib":
+	{
+		"height": 168.0
+	},
+	"output.9o:///Users/cc/go/src/redpack":
+	{
+		"height": 168.0
+	},
+	"output.9o:///Users/cc/go/src/redpack/config":
+	{
+		"height": 168.0
+	},
+	"output.9o:///Users/cc/go/src/redpack/models":
+	{
+		"height": 168.0
+	},
+	"output.9o:///Users/cc/go/src/tls-tunnel/client":
+	{
+		"height": 168.0
+	},
+	"output.9o:///Users/cc/go/src/tls-tunnel/client/tlsclient":
+	{
+		"height": 168.0
+	},
+	"output.9o:///Users/cc/go/src/tls-tunnel/server/tlsserver":
+	{
+		"height": 168.0
+	},
+	"output.GoSublime-main-output":
+	{
+		"height": 168.0
+	},
+	"output.GsDoc-output-output":
+	{
+		"height": 174.0
+	},
+	"output.exec":
+	{
+		"height": 174.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 174.0
+	},
+	"output.golang_build":
+	{
+		"height": 422.0
+	},
+	"output.markdown":
+	{
+		"height": 168.0
+	},
+	"output.sftp":
+	{
+		"height": 168.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 174.0
+	},
+	"pinned_build_system": "",
+	"project": "blog.sublime-project",
+	"replace":
+	{
+		"height": 204.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"public/app/modules/hotel/script/mobile/components/room_type/index.js",
+				"utuapp/public/app/modules/hotel/script/mobile/components/room_type/index.js.mine"
+			],
+			[
+				"moment",
+				"hotel/script/mobile/node_modules/moment/moment.js"
+			],
+			[
+				"mineindex.js",
+				"hotel/script/mobile/components/mine/index.js"
+			],
+			[
+				"",
+				"utuapp/app/config/config.php"
+			],
+			[
+				"signfo",
+				"utuapp/public/components/SignForm.vue"
+			],
+			[
+				"uvotemobicon",
+				"utuapp/app/modules/uvote/controllers/MobileController.php"
+			],
+			[
+				"dmxupload",
+				"utuapp/public/app/modules/debug/views/debug3/dmxMultiUpload.md"
+			],
+			[
+				"dmxuploadjs",
+				"utuapp/public/assets/script/mobile_common/dmxupload-components.js"
+			],
+			[
+				"formcompo",
+				"utuapp/public/assets/script/common/form-components.js"
+			],
+			[
+				"toolsapi",
+				"utuapp/app/modules/tools/controllers/ApiController.php"
+			],
+			[
+				"lazyloadimg",
+				"utuapp/public/assets/script/mobile_common/lazyloadimg.js"
+			],
+			[
+				"vueblank",
+				"utuapp/public/app/base_views/tpl_mobile_vue_blank.volt"
+			],
+			[
+				"proxymodels",
+				"utuapp/app/modules/proxy/models/DeviceVO.php"
+			],
+			[
+				"proxy",
+				"utuapp/app/modules/proxy/library/ProxyListener.php"
+			],
+			[
+				"tools",
+				"utuapp/app/modules/tools/library/ToolsListener.php"
+			],
+			[
+				"rootypevol",
+				"hotel/views/mobile/room_type.volt"
+			],
+			[
+				"roomtypejs",
+				"hotel/script/mobile/dist/roomType.js"
+			],
+			[
+				"vuetouch",
+				"utuapp/public/bower_components/vue-touch/vue-touch.js"
+			],
+			[
+				"vue-touch",
+				"utuapp/public/bower_components/vue-touch/vue-touch.js"
+			],
+			[
+				"mobicontro",
+				"utuapp/app/modules/article/controllers/MobileController.php"
+			],
+			[
+				"hotelmobile",
+				"hotel/controllers/MobileController.php"
+			],
+			[
+				"toolmobico",
+				"utuapp/app/modules/tools/controllers/MobileController.php"
+			],
+			[
+				"toolsmobico",
+				"utuapp/app/modules/tools/controllers/MobileController.php"
+			],
+			[
+				"piwi",
+				"utuapp/public/components/Piwik.vue"
+			],
+			[
+				"piwk",
+				"utuapp/public/components/Piwik.vue"
+			],
+			[
+				"piwivu",
+				"utuapp/public/components/Piwik.vue"
+			],
+			[
+				"basemo",
+				"utuapp/app/libraries/application/controllers/BaseMobileController.php"
+			],
+			[
+				"basemobilecon",
+				"utuapp/app/libraries/application/controllers/BaseMobileController.php"
+			],
+			[
+				"weixincom",
+				"utuapp/public/assets/script/mobile_common/weixin-components.js"
+			],
+			[
+				"piwivue",
+				"utuapp/public/components/Piwik.vue"
+			],
+			[
+				"mobiledetail.js",
+				"utuapp/public/app/modules/barrage/script/mobile/detail.js"
+			],
+			[
+				"mobileblank",
+				"utuapp/public/app/base_views/tpl_mobile_blank.volt"
+			],
+			[
+				"track",
+				"utuapp/public/assets/script/mobile_common/track-components.js"
+			],
+			[
+				"iconvue",
+				"utuapp/public/components/node_modules/vue-weui/components/icon/icon.vue"
+			],
+			[
+				"dialogvue",
+				"utuapp/public/components/node_modules/vue-weui/components/dialog/dialog.vue"
+			],
+			[
+				"topti",
+				"utuapp/public/components/node_modules/vue-weui/components/tips/toptips.vue"
+			],
+			[
+				"taotvue",
+				"utuapp/public/components/node_modules/vue-weui/components/toast/toast.vue"
+			],
+			[
+				"toast",
+				"utuapp/public/app/modules/debug/script/demo-vue/node_modules/vue-weui/components/toast/toast.vue"
+			],
+			[
+				"toastvue",
+				"utuapp/public/app/modules/debug/script/demo-vue/node_modules/vue-weui/components/toast/toast.vue"
+			],
+			[
+				"cellinput",
+				"utuapp/public/components/node_modules/vue-weui/components/cells/cell-input.vue"
+			],
+			[
+				"signcomponjs",
+				"utuapp/public/assets/script/mobile_common/signin-components.js"
+			],
+			[
+				"toolmobileco",
+				"utuapp/app/modules/tools/controllers/MobileController.php"
+			],
+			[
+				"toolsmobilecon",
+				"utuapp/app/modules/tools/controllers/MobileController.php"
+			],
+			[
+				"smscontroll",
+				"utuapp/app/modules/sms/controllers/ApiController.php"
+			],
+			[
+				"buttonvue",
+				"utuapp/public/components/node_modules/vue-weui/components/button/button.vue"
+			],
+			[
+				"cell.vue",
+				"hotel/script/mobile/node_modules/vue-weui/components/cells/input-cell.vue"
+			],
+			[
+				"cellhea",
+				"utuapp/public/components/node_modules/vue-weui/components/cells/cell-header.vue"
+			],
+			[
+				"cellvue",
+				"utuapp/public/components/node_modules/vue-weui/components/cells/cell.vue"
+			],
+			[
+				"inputce",
+				"utuapp/public/components/node_modules/vue-weui/components/cells/input-cell.vue"
+			],
+			[
+				"vue-weuiindex",
+				"utuapp/public/components/node_modules/vue-weui/components/index.js"
+			],
+			[
+				"cell",
+				"hotel/script/mobile/node_modules/vue-weui/components/cells/cell.vue"
+			],
+			[
+				"celinput",
+				"hotel/script/mobile/node_modules/vue-weui/components/cells/cell-input.vue"
+			],
+			[
+				"celinputvue",
+				"hotel/script/mobile/node_modules/vue-weui/components/cells/cell-input.vue"
+			],
+			[
+				"cells.vue",
+				"hotel/script/mobile/node_modules/vue-weui/components/cells/cells.vue"
+			],
+			[
+				"vueweuiindex",
+				"hotel/script/mobile/node_modules/vue-weui/components/index.js"
+			],
+			[
+				"vueweui",
+				"hotel/script/mobile/node_modules/vue-weui/dist/vue-weui.js"
+			],
+			[
+				"webpackdefine",
+				"hotel/script/mobile/node_modules/webpack/lib/DefinePlugin.js"
+			],
+			[
+				"weui.min",
+				"utuapp/public/bower_components/weui/dist/style/weui.min.css"
+			],
+			[
+				"formcom",
+				"public/assets/script/common/form-components.js"
+			],
+			[
+				"bower",
+				"public/bower.json"
+			],
+			[
+				"vueweuiinde",
+				"debug/script/demo-vue/node_modules/vue-weui/components/index.js"
+			],
+			[
+				"buttonarea",
+				"debug/script/demo-vue/node_modules/vue-weui/components/button/button-area.vue"
+			],
+			[
+				"demovu",
+				"utuapp/app/modules/debug/controllers/DemoVueController.php"
+			],
+			[
+				"demovuecon",
+				"utuapp/app/modules/debug/controllers/DemoVueController.php"
+			],
+			[
+				"demovue",
+				"utuapp/app/modules/debug/controllers/DemoVueController.php"
+			],
+			[
+				"debugmobilecon",
+				"utuapp/app/modules/debug/controllers/MobileController.php"
+			],
+			[
+				"debugdebugcon",
+				"utuapp/app/modules/debug/controllers/Debug1Controller.php"
+			],
+			[
+				"debugmobicon",
+				"utuapp/app/modules/debug/controllers/MobileController.php"
+			],
+			[
+				"debugmobilecom",
+				"debug/mobile/node_modules/async-each/component.json"
+			],
+			[
+				"wxgate",
+				"app/modules/wx/controllers/GatewayController.php"
+			],
+			[
+				"wxlis",
+				"app/modules/wx/library/WxListener.php"
+			],
+			[
+				"wjfcli",
+				"app/modules/custom/library/WjfClient.php"
+			],
+			[
+				"cusmobile",
+				"app/modules/custom/controllers/MobileController.php"
+			],
+			[
+				"maingo",
+				"client/main.go"
+			],
+			[
+				"signscreenvo",
+				"public/app/modules/signin/views/tenant/screen.volt"
+			],
+			[
+				"screenvolt",
+				"public/app/modules/luckey/views/tenant/screen.volt"
+			],
+			[
+				"signscrn",
+				"public/app/modules/signin/script/tenant/screen.js"
+			],
+			[
+				"signtenantvolt",
+				"public/app/modules/signin/views/tenant/screen.volt"
+			],
+			[
+				"wjf",
+				"app/modules/custom/library/WjfClient.php"
+			],
+			[
+				"custommobile",
+				"app/modules/custom/controllers/MobileController.php"
+			],
+			[
+				"cligo",
+				"client.go"
+			],
+			[
+				"sergo",
+				"server.go"
+			],
+			[
+				"test",
+				"test_udp.go"
+			],
+			[
+				"cli",
+				"client"
+			],
+			[
+				"wfjcli",
+				"modules/custom/library/WjfClient.php"
+			],
+			[
+				"cl",
+				"client.go"
+			],
+			[
+				"soc",
+				"socks.go"
+			],
+			[
+				"ser",
+				"server.go"
+			],
+			[
+				"membercardvo",
+				"app/modules/member/models/CardVO.php"
+			],
+			[
+				"memlis",
+				"app/modules/member/library/MemberListener.php"
+			],
+			[
+				"hotelcli",
+				"app/modules/hotel/library/HotelClient.php"
+			],
+			[
+				"poscashlistvolt",
+				"public/app/modules/pos/views/tenant/cashier_list.volt"
+			],
+			[
+				"poscashlistj",
+				"public/app/modules/pos/script/tenant/cashier_list.js"
+			],
+			[
+				"hote",
+				"app/modules/hotel/library/HotelClient.php"
+			],
+			[
+				"hotel",
+				"app/modules/hotel/library/HotelClient.php"
+			],
+			[
+				"hotelcl",
+				"app/modules/hotel/library/HotelClient.php"
+			],
+			[
+				"custommodule",
+				"app/modules/custom/ModuleRoutes.php"
+			],
+			[
+				"basecont",
+				"app/libraries/application/controllers/BaseController.php"
+			],
+			[
+				"hotellis",
+				"app/modules/hotel/library/HotelListener.php"
+			],
+			[
+				"hotelgate",
+				"app/modules/hotel/controllers/GatewayController.php"
+			],
+			[
+				"posconso",
+				"app/modules/pos/controllers/ConsoleController.php"
+			],
+			[
+				"shopconso",
+				"app/modules/shop/controllers/ConsoleController.php"
+			],
+			[
+				"pwdlis",
+				"app/modules/pwd/library/PwdListener.php"
+			],
+			[
+				"lotterydefineedi",
+				"public/app/modules/lottery/views/tenant/define_edit.volt"
+			],
+			[
+				"app/modules/tenant/script/main/index.js",
+				"public/app/modules/tenant/script/main/index.js"
+			],
+			[
+				"tenantmainindexvl",
+				"public/app/modules/tenant/views/main/index.volt"
+			],
+			[
+				"toollis",
+				"app/modules/tools/library/ToolsListener.php"
+			],
+			[
+				"smstenant",
+				"app/modules/sms/controllers/TenantController.php"
+			],
+			[
+				"modulevo",
+				"app/modules/system/models/SysModuleVO.php"
+			],
+			[
+				"module",
+				"app/config/modules.php"
+			],
+			[
+				"definevo",
+				"app/modules/pwd/models/DefineVO.php"
+			],
+			[
+				"pwd",
+				"app/modules/pwd/library/PwdListener.php"
+			],
+			[
+				"postena",
+				"app/modules/pos/controllers/TenantMobileController.php"
+			],
+			[
+				"postenant",
+				"app/modules/pos/controllers/TenantController.php"
+			],
+			[
+				"posreceiptvolt",
+				"public/app/modules/pos/views/tenant-mobile/receipt_log.volt"
+			],
+			[
+				"vervolt",
+				"public/app/modules/bargain/views/mobile/verify.volt"
+			],
+			[
+				"cashi",
+				"public/app/modules/pos/script/tenant-mobile/cashier.js"
+			],
+			[
+				"cashier",
+				"public/app/modules/pos/views/tenant-mobile/cashier.volt"
+			],
+			[
+				"postenmo",
+				"app/modules/pos/controllers/TenantMobileController.php"
+			],
+			[
+				"pwdtenant",
+				"app/modules/pwd/controllers/TenantController.php"
+			],
+			[
+				"singimobi",
+				"app/modules/signin/controllers/MobileController.php"
+			],
+			[
+				"wxtenant",
+				"app/modules/wx/controllers/TenantController.php"
+			],
+			[
+				"basemodel",
+				"app/libraries/application/models/BaseModel.php"
+			],
+			[
+				"wxmodelcard",
+				"app/modules/wx/models/CardLogVO.php"
+			],
+			[
+				"singlemobile",
+				"app/modules/singlecoupon/controllers/MobileController.php"
+			],
+			[
+				"singoemodel",
+				"app/modules/singlecoupon/models/DataVO.php"
+			],
+			[
+				"basmodel",
+				"app/libraries/application/models/BaseModel.php"
+			],
+			[
+				"singledefine",
+				"app/modules/singlecoupon/models/DefineVO.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documents/code/utuapp/utuapp.sublime-project"
+			],
+			[
+				"ju",
+				"~/Documents/code/juzcash/juzcash.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 247.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

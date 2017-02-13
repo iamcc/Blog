@@ -1,0 +1,83 @@
+---
+title: Google搜索技巧
+date: 2016-01-21 15:20:06
+tags: [google, search, tech]
+category: tech
+---
+<p>
+    在今天，用户可以通过搜索引擎轻松找出自己想要的信息，但还是难以避免结果不尽如人意的情况。实际上，用户仅需掌握几个常用技巧即可轻松化解这种尴尬。下面介绍 10 个在进行 Google 搜索时可以使用的便捷技巧，其他搜索引擎也支持这 10 种技巧。
+</p>
+<!-- more -->
+<p>1、准确搜索</p>
+<p align="center">
+    <img height="324" alt="" width="498" src="http://cimage.tianjimedia.com/uploadImages/20160120090324113.jpg"></p>
+<p>最简单、有效的准确搜索方式是在关键词上加上双引号，在这种情况下，搜索引擎只会反馈和关键词完全吻合的搜索结果。</p>
+<p>
+    比方说在搜索「Joe Bloggs」的时候，在没有给关键词加上双引号的情况，搜索引擎会显示所有分别和「Joe」以及「Bloggs」相关的信息，但这些显然并不是我们想要 的结果。但在加上双引号后，搜索引擎则仅会在页面上反馈和「Joe Bloggs」相吻合的信息。
+</p>
+<p>准确搜索在排除常见但相近度偏低的信息时非常有用，可以为用户省去再度对结果进行筛选的麻烦。</p>
+<p>2、排除关键词</p>
+<p align="center">
+    <img height="351" alt="" width="498" src="http://cimage.tianjimedia.com/uploadImages/20160120090324931.jpg"></p>
+<p>如果在进行准确搜索时没有找到自己想要的结果，用户可以对包含特定词汇的信息进行排除，仅需使用减号即可。</p>
+<p>
+    例如在搜索「『Joe Bloggs』-jeans」时，你所得到的结果反馈是不包含「jeans」字眼的「Joe Bloggs」条目。
+</p>
+<p>3、用「Either OR」(或)逻辑进行搜索</p>
+<p align="center">
+    <img height="295" alt="" width="493" src="http://cimage.tianjimedia.com/uploadImages/20160120090324130.jpg"></p>
+<p>
+    在默认搜索下，搜索引擎会反馈所有和查询词汇相关的结果，但通过使用「OR」逻辑，你可以得到和两个关键词分别相关的结果，而不仅仅是和两个关键词 都同时相关的结果。巧妙使用「OR」搜索可以让你在未能确定哪个关键词对于搜索结果起决定作用时依然可以确保搜索结果的准确性。
+</p>
+<p>4、同义词搜索</p>
+<p align="center">
+    <img height="272" alt="" width="454" src="http://cimage.tianjimedia.com/uploadImages/20160120090325927.jpg"></p>
+<p>有时候对不太确切的关键词进行搜索反而会显得更加合适。在未能准确判断关键词的情况下，你可以通过同义词进行搜索。</p>
+<p>
+    如果你在搜索引擎输入「plumbing ~university」，你所得到的反馈结果会包含「plumbing universities」和「plumbing colleges」等相似条目。
+</p>
+<p>5、在站内进行搜索</p>
+<p align="center">
+    <img height="303" alt="" width="498" src="http://cimage.tianjimedia.com/uploadImages/20160120090325251.jpg"></p>
+<p>绝大部分网站的搜索功能都有所欠缺，因此，更好的方法是通过 Google 等搜索引擎对站内的信息进行搜索。</p>
+<p>
+    你只需要在搜索引擎上输入「site:theguardian.com」加上关键词，搜索引擎就会反馈网站「theguardian.com」内和关键词相关的所有条目。如果再结合准确搜索功能，这项功能将会变得更加强大。
+</p>
+<p>6、善用星号</p>
+<p align="center">
+    <img height="306" alt="" width="498" src="http://cimage.tianjimedia.com/uploadImages/20160120090325603.jpg"></p>
+<p>
+    正如拼图游戏「Scrabble」的空白方块一样，在搜索引擎中，我们可以用星号填补关键词中的缺失部分，不论缺失的是一连串单词的其中一个还是一个单词的某一部分。此外，当你希望搜索一篇确定性偏低的文章时，也可以使用星号填补缺失部分。
+</p>
+<p>
+    例如，如果你在搜索引擎中输入「architect*」，你所得到的反馈结果将会是所有包含 architect、architectural、architecture、architected、architecting 以及其他所有以「architect」作为开头的词汇的条目。
+</p>
+<p>7、在两个数值之间进行搜索</p>
+<p align="center">
+    <img height="303" alt="" width="498" src="http://cimage.tianjimedia.com/uploadImages/20160120090325874.jpg"></p>
+<p>
+    在寻找问题的答案时，一个很好的方法是在一定范围内寻找和关键词相关的资讯。例如想要找出 1920 至 1950 年间的英国首相，直接在搜索引擎中输入「英国首相 1920.. 1950」即可得出想要的结果。
+</p>
+<p>记住，数值之间的符号是两个英文句号加一个空格键。</p>
+<p>8、在网页标题、链接和主体中搜索关键词</p>
+<p align="center">
+    <img height="338" alt="" width="498" src="http://cimage.tianjimedia.com/uploadImages/20160120090325238.jpg"></p>
+<p>
+    有时你或许会遇上找出所有和关键词相关的所有网页标题、链接和网页主体的需求，在这个时候你需要使用的是限定词「inurl:」(供在 url 链接中搜索使用)、「intext:」(供在网页主体中搜索使用)以及「intitle:」(供在网页标题中搜索使用)。
+</p>
+<p>例如，在搜索引擎中输入「intitle: 评测」会得到所有和关键词「评测」相关的网页标题。</p>
+<p>9、搜索相关网站</p>
+<p align="center">
+    <img height="298" alt="" width="497" src="http://cimage.tianjimedia.com/uploadImages/20160120090325204.jpg"></p>
+<p>
+    相关的限定词可用于搜索相关网站时使用。例如，你仅需在搜索引擎中输入「related:theguardian.com」即可得到所有和「theguardian.com」相关的网站反馈结果。
+</p>
+<p>10、搜索技能的组合使用</p>
+<p align="center">
+    <img height="337" alt="" width="498" src="http://cimage.tianjimedia.com/uploadImages/20160120090326648.jpg"></p>
+<p>
+    你可以对上述所有搜索技能进行组合运用，以便按照自己的意愿缩小或者扩展搜索范围。尽管有些技能或许并不常用，但准确搜索和站内搜索这些技能的使用范围还是相当广泛的。
+</p>
+<p>
+    随着 Google 等搜索引擎对于用户自然语言的理解程度与日俱增，这些搜索技能可以派上用场的情况或许将会变得越来越少，至少这是所有搜索引擎共同追求的目标。但是在当下，掌握这些搜索技能还是非常必要的。
+</p>
