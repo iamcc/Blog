@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Something</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://iamcc.github.io/"/>
+  <updated>2018-12-19T03:33:00.663Z</updated>
+  <id>http://iamcc.github.io/</id>
+  
+  <author>
+    <name>CC</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>css 小知识(margin, padding)</title>
+    <link href="http://iamcc.github.io/2017/02/22/css-%E5%B0%8F%E7%9F%A5%E8%AF%86-margin-padding/"/>
+    <id>http://iamcc.github.io/2017/02/22/css-小知识-margin-padding/</id>
+    <published>2017-02-22T04:33:03.000Z</published>
+    <updated>2018-12-19T03:33:00.663Z</updated>
+    
+    <content type="html"><![CDATA[<p>关于 CSS 的 <code>margin</code> 和 <code>padding</code> 属性，有一个比较有意思的小知识，不详细看 <code>w3c</code> 的说明并不会发现。</p><a id="more"></a><h3 id="🌰栗子"><a href="#🌰栗子" class="headerlink" title="🌰栗子"></a>🌰栗子</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">            .outer &#123;</span></span><br><span class="line"><span class="undefined">                position: relative;</span></span><br><span class="line"><span class="undefined">                width: 200px;</span></span><br><span class="line"><span class="undefined">                height: 100px;</span></span><br><span class="line"><span class="undefined">                background: pink;</span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">            </span></span><br><span class="line"><span class="undefined">            .mid &#123;</span></span><br><span class="line"><span class="undefined">                width: 100px;</span></span><br><span class="line"><span class="undefined">                height: 100px;</span></span><br><span class="line"><span class="undefined">                background: yellow;</span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">            </span></span><br><span class="line"><span class="undefined">            .inner &#123;</span></span><br><span class="line"><span class="undefined">                background: blue;</span></span><br><span class="line"><span class="undefined">                padding-top: 20%;</span></span><br><span class="line"><span class="undefined">                margin-top: 20%;</span></span><br><span class="line"><span class="undefined">                position: absolute;</span></span><br><span class="line"><span class="undefined">                width: 300px;</span></span><br><span class="line"><span class="undefined">                height: auto;</span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">        </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"outer"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"mid"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"inner"</span>&gt;</span></span><br><span class="line">                    test</span><br><span class="line">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><p><img src="/2017/02/22/css-小知识-margin-padding/2664086299-58a69dcecb91d_articlex.png" alt=""></p><p>上面可以看到，<code>margin-top</code> 和 <code>padding-top</code> 都是 <code>40px</code>，这 <code>40px</code> 怎么来的呢？</p><p>w3c 的<a href="https://www.w3.org/TR/CSS21/box.html#margin-properties" target="_blank" rel="noopener">官网</a>上有详细的说明，具体有一个描述是这样的：</p><blockquote><p>The percentage is calculated with respect to the width of the generated box’s containing block, even for ‘padding-top’ and ‘padding-bottom’. If the containing block’s width depends on this element, then the resulting layout is undefined in CSS 2.1.</p></blockquote><p>意思是当 <code>margin</code> <code>padding</code> 被设置为<code>百分比</code> 的时候，这个数值的计算是基于他的<code>包含块（containing block）</code>的宽度来计算的。那什么是<code>包含快</code>呢？</p><h3 id="包含快（containing-block）"><a href="#包含快（containing-block）" class="headerlink" title="包含快（containing block）"></a>包含快（containing block）</h3><p><code>包含块</code> ≠ <code>父元素</code> ，以上面的栗子来说明，<code>.inner</code> 的 <code>父元素</code> 是 <code>.mid</code> ，它的宽度是 <code>100px</code> ，如果 <code>包含块</code> 是 <code>父元素</code> 的话，计算结果应该是 <code>20px</code> ，所以 <code>包含块</code> ≠ <code>父元素</code> 。事实 <code>40px</code> 是基于 <code>.outer</code> 计算出来的， <code>200px * 20% = 40px</code> ，为什么呢？</p><p>因为，如果元素具有 <code>position：absolute</code> ，<code>包含块</code> 则是离最近的 <code>position</code> 为 <code>absolute</code>，<code>relative</code> 或者 <code>fixed</code>  的 <code>块级祖先元素</code>。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;关于 CSS 的 &lt;code&gt;margin&lt;/code&gt; 和 &lt;code&gt;padding&lt;/code&gt; 属性，有一个比较有意思的小知识，不详细看 &lt;code&gt;w3c&lt;/code&gt; 的说明并不会发现。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
+    
+    
+      <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
+    
+      <category term="study" scheme="http://iamcc.github.io/tags/study/"/>
+    
+      <category term="css" scheme="http://iamcc.github.io/tags/css/"/>
+    
+      <category term="margin" scheme="http://iamcc.github.io/tags/margin/"/>
+    
+      <category term="padding" scheme="http://iamcc.github.io/tags/padding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>当 JSON.parse 遇上 UNprintable String</title>
+    <link href="http://iamcc.github.io/2017/02/13/%E5%BD%93-JSON-parse-%E9%81%87%E4%B8%8A-UNprintable-String/"/>
+    <id>http://iamcc.github.io/2017/02/13/当-JSON-parse-遇上-UNprintable-String/</id>
+    <published>2017-02-13T07:40:53.000Z</published>
+    <updated>2018-12-19T03:33:00.665Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="前因"><a href="#前因" class="headerlink" title="前因"></a>前因</h3><p>在为团队写一个自动化脚本的时候，有一个测试硬是跑不过，错误总是提示 <code>JSON parsing: Unexpected Token error</code> 。一开始我以为是 JSON 文本的错，就 <code>console.log</code> 打印出来，然后 <code>copy</code> 到命令行执行，诡异的执行正确了。为了确认我重复了这个动作 N 遍，事实证明就是那么诡异。</p><a id="more"></a><h3 id="后果"><a href="#后果" class="headerlink" title="后果"></a>后果</h3><p>导致的后果就是，这个自动化测试脚本硬是跑不通过了，只好进入苦逼的 Debug 模式。</p><h3 id="找原因"><a href="#找原因" class="headerlink" title="找原因"></a>找原因</h3><p>因为已经尝试过 <code>copy</code> 文本出来执行转换 <code>JSON</code> 是没问题的，所以至少 <code>JSON</code> 文本是正确的，那为什么跑脚本就一直是错误的呢？可以肯定的是，机器不会骗人（所以说自动化测试是多么的重要）。</p><p>然后抱着侥幸的心理，把文本 <code>trim</code> 了一下再 <code>JSON.parse</code> ，诡异的程序跑通了，我马上肯定（后面被自己打脸）是因为前后有空字符串导致的，还嘲讽了一下 <code>JavaScript</code> 怎么那么傻逼，这都不行，然后自己到命令行手动的加几个 <code>空格</code>  <code>回车</code> 什么的，结果 <code>JSON.parse</code> 通过了，好在只有自己知道 😂，要不然这脸丢大了。</p><p>既然可以确定 <code>trim</code> 之后程序就正常了，那肯定就是有空白字符的存在，但是可以明显看到，我 <code>console.log</code> 出来的字符串是没有空白的，不服气，我用程序对比了一下字符串，然而程序告诉我 <code>trim</code> 之后字符串的确发生了改变。这时我已经以为我疯了，然而再侥幸的，我把两次字符串转换成 <code>Buffer</code> 输出，这时候答案就出来了（又是一个巨大的坑）。</p><p><img src="/2017/02/13/当-JSON-parse-遇上-UNprintable-String/00A3B369-A45D-4DBA-955C-1C53C391E6D7.png" alt="00A3B369-A45D-4DBA-955C-1C53C391E6D7"></p><p>可以看到 <code>trim</code> 之前字符串前面多了三个字节 <code>ef</code> <code>bb</code> <code>bf</code> ，这个坑是跨平台编辑很容易遇上的一个问题，因为用 <code>unix</code> 系统久了，忘记了这个梗。</p><h3 id="UTF-8-With-BOM"><a href="#UTF-8-With-BOM" class="headerlink" title="UTF-8 With BOM"></a>UTF-8 With BOM</h3><p><code>BOM (Byte Order Mark)</code> , 微软在自己的UTF-8格式的文本文件之前加上了EF BB BF三个字节, windows上面的notepad等程序就是根据这三个字节来确定一个文本文件是ASCII的还是UTF-8的, 然而这个只是微软暗自作的标记, 其它平台上并没有对UTF-8文本文件做个这样的标记。</p><h3 id="导致的原因"><a href="#导致的原因" class="headerlink" title="导致的原因"></a>导致的原因</h3><p>那为什么唯独这个接口会这样呢？提出问题之后一位同事查看了 Git History，发现这个 BOM 是在两年前某次更新不小心引入的，😂。</p><h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><p>如前面描述一样，把 <code>String</code> <code>trim</code> 一下就可以了，然后自动化测试脚本就正常了。</p><p><img src="/2017/02/13/当-JSON-parse-遇上-UNprintable-String/F6449205-B1D2-4E4E-BDB7-9AA5CB41B74A.png" alt="F6449205-B1D2-4E4E-BDB7-9AA5CB41B74A"></p><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>所以我总是相信，机器不会骗人的，眼见并不一定为实，和人总是会犯错误的。</p><p>要保证自己在干的事情不是在制造 Bug，就需要一个验证自己在干的事情到底是不是产生了很多 Bug，这个验证的东西就叫做 <code>自动化回归测试</code> ，当你修改了程序不知道是否导致过往的程序的运行结果的时候，跑一遍就知道了。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;前因&quot;&gt;&lt;a href=&quot;#前因&quot; class=&quot;headerlink&quot; title=&quot;前因&quot;&gt;&lt;/a&gt;前因&lt;/h3&gt;&lt;p&gt;在为团队写一个自动化脚本的时候，有一个测试硬是跑不过，错误总是提示 &lt;code&gt;JSON parsing: Unexpected Token error&lt;/code&gt; 。一开始我以为是 JSON 文本的错，就 &lt;code&gt;console.log&lt;/code&gt; 打印出来，然后 &lt;code&gt;copy&lt;/code&gt; 到命令行执行，诡异的执行正确了。为了确认我重复了这个动作 N 遍，事实证明就是那么诡异。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
+    
+    
+      <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
+    
+      <category term="json" scheme="http://iamcc.github.io/tags/json/"/>
+    
+      <category term="bug" scheme="http://iamcc.github.io/tags/bug/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【redis学习三】简单高可用redis架构实践</title>
+    <link href="http://iamcc.github.io/2017/02/08/%E3%80%90redis%E5%AD%A6%E4%B9%A0%E4%B8%89%E3%80%91%E7%AE%80%E5%8D%95%E9%AB%98%E5%8F%AF%E7%94%A8redis%E6%9E%B6%E6%9E%84%E5%AE%9E%E8%B7%B5/"/>
+    <id>http://iamcc.github.io/2017/02/08/【redis学习三】简单高可用redis架构实践/</id>
+    <published>2017-02-08T00:46:33.000Z</published>
+    <updated>2018-12-19T03:33:00.664Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://cuihuan.net/2017/02/05/redis3/" target="_blank" rel="noopener">【redis学习三】简单高可用redis架构实践</a></p><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://cuihuan.net/2017/02/05/redis3/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;【redis学习三】简单高可用redis架构实践&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
+    
+    
+      <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
+    
+      <category term="study" scheme="http://iamcc.github.io/tags/study/"/>
+    
+      <category term="mark" scheme="http://iamcc.github.io/tags/mark/"/>
+    
+      <category term="redis" scheme="http://iamcc.github.io/tags/redis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>记一次内存泄漏排查</title>
+    <link href="http://iamcc.github.io/2017/02/07/%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E6%8E%92%E6%9F%A5/"/>
+    <id>http://iamcc.github.io/2017/02/07/记一次内存泄漏排查/</id>
+    <published>2017-02-07T09:54:03.000Z</published>
+    <updated>2018-12-19T03:33:00.667Z</updated>
+    
+    <content type="html"><![CDATA[<p>一个部署在阿里云上的服务突然有一天发现原来正常运行的程序突然挂了，这时候发现内存偏高，CPU 100%，一开始怀疑是不是代码造成的死循环 Bug，之后就开始了痛苦的排查过程。</p><a id="more"></a><h3 id="node-–prof"><a href="#node-–prof" class="headerlink" title="node –prof"></a>node –prof</h3><p><code>node --prof</code> 命令是用来排查性能问题的一个很有用的命令，他会生成一个 v8 的 log 文件。</p><p>通过一番 Google，然后把原来的启动命令 <code>node app.js</code> 替换成 <code>node --prof app.js</code>，运行一段时间后生成了一个几百兆的分析文件，然后通过命令 <code>node --prof-process isoxxx</code> 分析。看到一大堆密密麻麻的字母，一开始不知道该怎么看，又一番 Google 之后大概看出来个一二，发现某个关键字出现很多，是 <code>mongoose</code> 库里的一个文件 <code>pool.js</code> ，看单词就可以猜到，应该是连接池，接着有一个关键字也出现频率很高，是 <code>timeout</code> ，猜测大概是操作超时了。然后顺着这个思路继续查。</p><h3 id="node-heapdump"><a href="#node-heapdump" class="headerlink" title="node-heapdump"></a>node-heapdump</h3><p>从上面的排查大概猜测是数据库问题之后，因为只是猜测，所以又用到另外一个常用方法 <code>heapdump</code>，这个库可以很方便的通过代码来捕获当前内存的快照，然后通过导入 Chrome 来分析。经过对比分析之后，发现有一个对象 <code>system / JSArrayBufferData</code> 不断的增长而且很缓慢的释放，所以应该不算内存泄漏而是产生太快而消费太慢导致内存极速增长。而展开这个对象，里面又出现了两个关键字 <code>pool</code> <code>queue</code>，这时候大致上认为是请求的队列在增长。</p><h3 id="node-–trace-gc-–trace-gc-verbose"><a href="#node-–trace-gc-–trace-gc-verbose" class="headerlink" title="node –trace_gc –trace_gc_verbose"></a>node –trace_gc –trace_gc_verbose</h3><p>经过上面的分析，虽然已经猜测到了大概，也 Review 了代码，已经差不多可以确认就是过快的写入数据库导致的，因为我在 Review 代码的时候竟然发现大量的循环操作写数据库 😂。但是我还是无法确认为什么在空闲的时候 CPU 已然是那么高，对比其他应用几乎不占用 CPU 资源，内存也很低。没办法，把命令换成 <code>node --trace_gc --trace_gc_verbose</code> 把每一次 GC 的过程都打出来，这时候我瞬间明白了为什么 CPU 一直在增长。通过 GC 日志知道，系统在频繁的进行 GC，v8 的 GC 分两种，一种是函数里面的临时变量，这些变量被放在 <code>new_space</code> 里面，基本上这些内存在下一次 <code>young gc</code> 的时候就会被回收，而没有被回收的内存会被放到 <code>old_space</code> ， <code>old_space</code> 的资源会存在比较久，而且只要没有被清除系统就会定时的执行 <code>full gc</code> ，这时候系统扫描这里面的资源是否有被释放然后回收。如果你的应用程序的 <code>old_space</code> 在不断的增加而没有被释放的话，基本上可以断定内存泄漏了。所以当 <code>old_space</code> 增大到某个程度的时候，这时候 GC 扫描这个对象就造成 CPU 100%，GC 本身就是一个耗 CPU 的操作，当前面 <code>old_space</code> 还没那么庞大的时候 GC 还能跑得动，运行一段时间之后 GC 已经跑不动了，这时候 CPU 已经 100%，所以程序也就挂了。</p><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>后来跟工程师反应这个问题，并给出优化的方案，同时在简单的 Code Review 里面我还发现了几个问题：</p><ol><li><p>在没有设置限制的情况之下直接循环执行数据库更新操作。（由于 Nodejs 的异步特性，所有操作会在同一时间执行，造成数据库资源紧张导致部分执行 timeout 错误）</p><p><code>解决</code>：限制并发执行的最大数量。</p></li><li><p>代码里面出现长长的一个 function，里面满满的 if-else，完全看不出代码逻辑是干什么的，非常混乱。</p><p><code>解决</code>：把逻辑抽象出来，并用清晰的 function_name 来描述代码逻辑是干什么用的。</p></li><li><p>代码逻辑里面跑满了各种计算和数据库操作，每次 API 请求都要跑一遍，而大多数情况之下这些计算是浪费资源的，因为结果基本上是一样的。</p><p><code>解决</code>：加入适当的缓存机制，避免重复的计算浪费资源。</p></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一个部署在阿里云上的服务突然有一天发现原来正常运行的程序突然挂了，这时候发现内存偏高，CPU 100%，一开始怀疑是不是代码造成的死循环 Bug，之后就开始了痛苦的排查过程。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
+    
+    
+      <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
+    
+      <category term="js" scheme="http://iamcc.github.io/tags/js/"/>
+    
+      <category term="javascript" scheme="http://iamcc.github.io/tags/javascript/"/>
+    
+      <category term="nodejs" scheme="http://iamcc.github.io/tags/nodejs/"/>
+    
+      <category term="node" scheme="http://iamcc.github.io/tags/node/"/>
+    
+      <category term="leak" scheme="http://iamcc.github.io/tags/leak/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>php json_encode 数组问题</title>
+    <link href="http://iamcc.github.io/2016/06/23/php-json-encode-%E6%95%B0%E7%BB%84%E9%97%AE%E9%A2%98/"/>
+    <id>http://iamcc.github.io/2016/06/23/php-json-encode-数组问题/</id>
+    <published>2016-06-23T02:57:47.000Z</published>
+    <updated>2018-12-19T03:33:00.664Z</updated>
+    
+    <content type="html"><![CDATA[<p>项目里一个正常跑的项目前端突然报了一个 <code>xxx.map is not a function</code>。<br>纳闷的我又开始了填坑的路，chrome debug 一下，发现原本应该是 <code>array</code> 的地方变成 <code>object</code> 了。<br>也就是 [0: xxx] 变成 {“0”: xxx} 这样了，导致前端 <code>js</code> 报错。<br>最后用了一个偷懒的方法解决这个问题，就是输出之前 <code>array_values</code> 一下就好了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;项目里一个正常跑的项目前端突然报了一个 &lt;code&gt;xxx.map is not a function&lt;/code&gt;。&lt;br&gt;纳闷的我又开始了填坑的路，chrome debug 一下，发现原本应该是 &lt;code&gt;array&lt;/code&gt; 的地方变成 &lt;code&gt;object
+      
+    
+    </summary>
+    
+      <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
+    
+    
+      <category term="php" scheme="http://iamcc.github.io/tags/php/"/>
+    
+      <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
+    
+      <category term="javascript" scheme="http://iamcc.github.io/tags/javascript/"/>
+    
+      <category term="json" scheme="http://iamcc.github.io/tags/json/"/>
+    
+      <category term="array" scheme="http://iamcc.github.io/tags/array/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>磁盘占满导致redis错误</title>
+    <link href="http://iamcc.github.io/2016/06/20/%E7%A3%81%E7%9B%98%E5%8D%A0%E6%BB%A1%E5%AF%BC%E8%87%B4redis%E9%94%99%E8%AF%AF/"/>
+    <id>http://iamcc.github.io/2016/06/20/磁盘占满导致redis错误/</id>
+    <published>2016-06-20T09:08:39.000Z</published>
+    <updated>2018-12-19T03:33:00.666Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天莫名其妙的开发服务器登录成功却马上又跳到401错误，第一反应当然是session出问题。<br>排查代码没有修改，配置文件没有修改，但是session始终无法正确保存。<br>最后再排查日志，由于redis开了aof，磁盘占满后无法写入磁盘导致redis无法写入。<br>又踩到一个大坑。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;今天莫名其妙的开发服务器登录成功却马上又跳到401错误，第一反应当然是session出问题。&lt;br&gt;排查代码没有修改，配置文件没有修改，但是session始终无法正确保存。&lt;br&gt;最后再排查日志，由于redis开了aof，磁盘占满后无法写入磁盘导致redis无法写入。&lt;br
+      
+    
+    </summary>
+    
+      <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
+    
+    
+      <category term="exp" scheme="http://iamcc.github.io/tags/exp/"/>
+    
+      <category term="redis" scheme="http://iamcc.github.io/tags/redis/"/>
+    
+      <category term="error" scheme="http://iamcc.github.io/tags/error/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>聊一聊前端自动化测试</title>
+    <link href="http://iamcc.github.io/2016/03/17/%E8%81%8A%E4%B8%80%E8%81%8A%E5%89%8D%E7%AB%AF%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+    <id>http://iamcc.github.io/2016/03/17/聊一聊前端自动化测试/</id>
+    <published>2016-03-17T04:57:09.000Z</published>
+    <updated>2018-12-19T03:33:00.667Z</updated>
+    
+    <content type="html"><![CDATA[<p>天猫分享的好文<br><a href="https://github.com/tmallfe/tmallfe.github.io/issues/37" target="_blank" rel="noopener">https://github.com/tmallfe/tmallfe.github.io/issues/37</a></p><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;天猫分享的好文&lt;br&gt;&lt;a href=&quot;https://github.com/tmallfe/tmallfe.github.io/issues/37&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/tmallfe/tmallfe.github.io/issues/37&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
+    
+    
+      <category term="js" scheme="http://iamcc.github.io/tags/js/"/>
+    
+      <category term="javascript" scheme="http://iamcc.github.io/tags/javascript/"/>
+    
+      <category term="testing" scheme="http://iamcc.github.io/tags/testing/"/>
+    
+      <category term="unit testing" scheme="http://iamcc.github.io/tags/unit-testing/"/>
+    
+      <category term="webpack" scheme="http://iamcc.github.io/tags/webpack/"/>
+    
+      <category term="react" scheme="http://iamcc.github.io/tags/react/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于Mesos和Docker的分布式计算平台</title>
+    <link href="http://iamcc.github.io/2016/03/04/%E5%9F%BA%E4%BA%8EMesos%E5%92%8CDocker%E7%9A%84%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97%E5%B9%B3%E5%8F%B0/"/>
+    <id>http://iamcc.github.io/2016/03/04/基于Mesos和Docker的分布式计算平台/</id>
+    <published>2016-03-04T00:58:35.000Z</published>
+    <updated>2018-12-19T03:33:00.664Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://blog.dataman-inc.com/2015-06-13-mesos-docker-distributed-computing-platform/" target="_blank" rel="noopener">http://blog.dataman-inc.com/2015-06-13-mesos-docker-distributed-computing-platform/</a></p><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://blog.dataman-inc.com/2015-06-13-mesos-docker-distributed-computing-platform/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://blog.dataman-inc.com/2015-06-13-mesos-docker-distributed-computing-platform/&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
+    
+    
+      <category term="cluster" scheme="http://iamcc.github.io/tags/cluster/"/>
+    
+      <category term="mesos" scheme="http://iamcc.github.io/tags/mesos/"/>
+    
+      <category term="docker" scheme="http://iamcc.github.io/tags/docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Use podcast to learn English</title>
+    <link href="http://iamcc.github.io/2016/02/29/Use-podcast-to-learn-English/"/>
+    <id>http://iamcc.github.io/2016/02/29/Use-podcast-to-learn-English/</id>
+    <published>2016-02-29T00:37:33.000Z</published>
+    <updated>2018-12-19T03:33:00.663Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近不知道发什么疯，又把podcast 听起来了，所以记录下几个节目单。</p><ol><li>Wait Wait… Don’t Tell Me!</li><li>Learning English for China</li><li>English as a Second Language</li><li>Special English</li><li>英语口语每天学</li><li>英语怎么说？</li><li>英语铺子</li><li>摩天轮（More to learn)</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;最近不知道发什么疯，又把podcast 听起来了，所以记录下几个节目单。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Wait Wait… Don’t Tell Me!&lt;/li&gt;
+&lt;li&gt;Learning English for China&lt;/li&gt;
+&lt;li&gt;English as a Sec
+      
+    
+    </summary>
+    
+      <category term="language" scheme="http://iamcc.github.io/categories/language/"/>
+    
+    
+      <category term="english" scheme="http://iamcc.github.io/tags/english/"/>
+    
+      <category term="study" scheme="http://iamcc.github.io/tags/study/"/>
+    
+      <category term="podcast" scheme="http://iamcc.github.io/tags/podcast/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Top 5 Android libraries every Android developer should know about - v. 2015</title>
+    <link href="http://iamcc.github.io/2016/02/26/Top-5-Android-libraries-every-Android-developer-should-know-about-v-2015/"/>
+    <id>http://iamcc.github.io/2016/02/26/Top-5-Android-libraries-every-Android-developer-should-know-about-v-2015/</id>
+    <published>2016-02-26T02:54:05.000Z</published>
+    <updated>2018-12-19T03:33:00.663Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>原文链接 : <a href="https://infinum.co/the-capsized-eight/articles/top-five-android-libraries-every-android-developer-should-know-about-v2015" target="_blank" rel="noopener">Top 5 Android libraries every Android developer should know about - v. 2015</a></li><li>原文作者 : <a href="https://infinum.co/the-capsized-eight/author/ivan-kust" target="_blank" rel="noopener">Infinum</a></li><li>译文出自 : <a href="https://github.com/xitu/gold-miner" target="_blank" rel="noopener">掘金翻译计划</a></li><li>译者 : <a href="https://github.com/kassadin" target="_blank" rel="noopener">Kassadin</a></li><li>校对者: <a href="https://github.com/xiuweikang" target="_blank" rel="noopener">xiuweikang</a> <a href="https://github.com/lihb" target="_blank" rel="noopener">lihb</a></li><li>状态 : </li></ul><p>在2014年6月，我们发表了一篇关于<a href="https://infinum.co/the-capsized-eight/articles/top-5-android-libraries-every-android-developer-should-know-about" target="_blank" rel="noopener">5 个顶级 Android 开源库</a>的文章，我们一直在用，并且相信每个 Android 开发者都应该了解这些开源库。从那之后，Android 方面已经发生了很多变化，所以我们写了这篇文章，我们最喜欢的5个开源库的更新版。</p><p>下面是更新列表:</p><p><img src="https://s3.amazonaws.com/infinum.web.production/repository_items/files/000/000/308/original/top_5_android_libraries.png?1402486321" alt="Top 5 Android libraries"></p><h2 id="1-Retrofit"><a href="#1-Retrofit" class="headerlink" title="1. Retrofit"></a>1. <a href="https://github.com/square/retrofit/tree/version-one" target="_blank" rel="noopener">Retrofit</a></h2><p>当涉及到实现 REST APIs 时，Retrofit 仍是我们的最爱。</p><p>他们的网站上写着: “Retrofit 将 REST API 转换为 Java 接口。”是的，还有其他解决方案，但是 Retrofit 已经被证明是在一个项目中管理 API 调用最优雅、最方便的解决方案。使用注解添加请求方法和相对地址使得代码干净简单。</p><p>通过注解，你可以轻松地添加请求体，操作 URL 或请求头并添加查询参数。</p><p>为方法添加返回类型会使该方法同步执行，然而添加Callback（回调）会使之异步执行，完成后回调 success 或 failure 方法。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">RetrofitInterface</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 异步带回调</span></span><br><span class="line">    <span class="meta">@GET</span>(<span class="string">"/api/user"</span>)</span><br><span class="line">    <span class="function">User <span class="title">getUser</span><span class="params">(@Query(<span class="string">"user_id"</span>)</span> <span class="keyword">int</span> userId, Callback&lt;User&gt; callback)</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 同步</span></span><br><span class="line">    <span class="meta">@POST</span>(<span class="string">"/api/user/register"</span>)</span><br><span class="line">    <span class="function">User <span class="title">registerUser</span><span class="params">(@Body User user)</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 例子</span></span><br><span class="line">RetrofitInterface retrofitInterface = <span class="keyword">new</span> RestAdapter.Builder()</span><br><span class="line">            .setEndpoint(API.API_URL).build().create(RetrofitInterface.class);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 获取 id 为 2048 的用户</span></span><br><span class="line">retrofitInterface.getUser(<span class="number">2048</span>, <span class="keyword">new</span> Callback&lt;User&gt;() &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">success</span><span class="params">(User user, Response response)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">failure</span><span class="params">(RetrofitError retrofitError)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p>Retrofit 默认使用 <a href="https://code.google.com/p/google-gson/" target="_blank" rel="noopener">Gson</a>，所以不需要手动解析 JSON。当然其他的转换器也是支持的。</p><p>现在 Retrofit 2.0 正在活跃地开发着，仍然是 beta，但你可以从<a href="http://square.github.io/retrofit/" target="_blank" rel="noopener">这里</a>获取到。从 Retrofit 1.9 开始，很多的东西都被砍了，也有一些重大的变化比如使用新的调用接口取代回调。</p><h2 id="2-DBFlow"><a href="#2-DBFlow" class="headerlink" title="2. DBFlow"></a>2. <a href="https://github.com/Raizlabs/DBFlow" target="_blank" rel="noopener">DBFlow</a></h2><p>如果你正准备在你的项目中存储任意复杂的数据，你应该使用 DBFlow。正如他们的 GitHub 上所说，这是“一个速度极快，功能强大，而且非常简单的 Android 数据库 ORM 库，为你编写数据库代码”。</p><p>一些简单的栗子:</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Query a List</span></span><br><span class="line"><span class="keyword">new</span> Select().from(SomeTable.class).queryList();</span><br><span class="line"><span class="keyword">new</span> Select().from(SomeTable.class).where(conditions).queryList();</span><br><span class="line"></span><br><span class="line"><span class="comment">// Query Single Model</span></span><br><span class="line"><span class="keyword">new</span> Select().from(SomeTable.class).querySingle();</span><br><span class="line"><span class="keyword">new</span> Select().from(SomeTable.class).where(conditions).querySingle();</span><br><span class="line"></span><br><span class="line"><span class="comment">// Query a Table List and Cursor List</span></span><br><span class="line"><span class="keyword">new</span> Select().from(SomeTable.class).where(conditions).queryTableList();</span><br><span class="line"><span class="keyword">new</span> Select().from(SomeTable.class).where(conditions).queryCursorList();</span><br><span class="line"></span><br><span class="line"><span class="comment">// SELECT methods</span></span><br><span class="line"><span class="keyword">new</span> Select().distinct().from(table).queryList();</span><br><span class="line"><span class="keyword">new</span> Select().all().from(table).queryList();</span><br><span class="line"><span class="keyword">new</span> Select().avg(SomeTable$Table.SALARY).from(SomeTable.class).queryList();</span><br><span class="line"><span class="keyword">new</span> Select().method(SomeTable$Table.SALARY, <span class="string">"MAX"</span>).from(SomeTable.class).queryList();</span><br></pre></td></tr></table></figure><p>DBFlow 是一个不错的 ORM，这将消除大量用于处理数据库的样板代码。虽然 Android 也有其他的 ORM 方案，但对我们来说 DBFlow 已被证明是最好的解决方案。</p><h2 id="3-Glide"><a href="#3-Glide" class="headerlink" title="3. Glide"></a>3. <a href="https://github.com/bumptech/glide" target="_blank" rel="noopener">Glide</a></h2><p>Glide 是一个用于加载图片的库。当前备选方案有 <a href="https://github.com/nostra13/Android-Universal-Image-Loader" target="_blank" rel="noopener">Universal Image Loader</a> 和 <a href="https://github.com/square/picasso" target="_blank" rel="noopener">Picasso</a>；但是，以我来看，Glide 是当前的最佳选择。</p><p>下面是一个简单的例子，关于如何使用 Glide 从 URL 加载图片到 ImageView。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ImageView imageView = (ImageView) findViewById(R.id.my_image_view);</span><br><span class="line"></span><br><span class="line">Glide.with(<span class="keyword">this</span>).load(<span class="string">"http://goo.gl/gEgYUd"</span>).into(imageView);</span><br></pre></td></tr></table></figure><h2 id="4-Butterknife"><a href="#4-Butterknife" class="headerlink" title="4. Butterknife"></a>4. <a href="http://jakewharton.github.io/butterknife/" target="_blank" rel="noopener">Butterknife</a></h2><p>一个用于将 Android 视图绑定到属性和方法的库（例如，绑定一个 view 的 OnClick 事件到一个方法）。较之前版本而言，基本功能没有变化，但可选项增加了。栗子：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ExampleActivity</span> <span class="keyword">extends</span> <span class="title">Activity</span> </span>&#123;</span><br><span class="line">  <span class="meta">@Bind</span>(R.id.title) TextView title;</span><br><span class="line">  <span class="meta">@Bind</span>(R.id.subtitle) TextView subtitle;</span><br><span class="line">  <span class="meta">@Bind</span>(R.id.footer) TextView footer;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Override</span> <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">    setContentView(R.layout.simple_activity);</span><br><span class="line">    ButterKnife.bind(<span class="keyword">this</span>);</span><br><span class="line">    <span class="comment">// TODO Use fields...</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="5-Dagger-2"><a href="#5-Dagger-2" class="headerlink" title="5. Dagger 2"></a>5. <a href="http://google.github.io/dagger/" target="_blank" rel="noopener">Dagger 2</a></h2><p>自从我们迁移到 MVP 架构，我们就开始了广泛使用依赖注入。Dagger 2 是著名的依赖注入库 Dagger 的继承者，我们强烈推荐它。</p><p>一个主要的改进就是生成的注入代码不再依赖反射，这使得调试容易了许多。</p><p>Dagger 为您创建类的实例，并满足他们的依赖。这依赖于 javax.inject.Inject 注解，以确定哪些构造函数或字段应被视为依赖。以著名的咖啡机(CoffeeMaker)为例:</p><blockquote><p>译者注：Dagger 和 Dagger 2 的官方文档里都是使用这个例子，所以著名…</p></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Thermosiphon</span> <span class="keyword">implements</span> <span class="title">Pump</span> </span>&#123;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">final</span> Heater heater;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Inject</span></span><br><span class="line">  Thermosiphon(Heater heater) &#123;</span><br><span class="line">    <span class="keyword">this</span>.heater = heater;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>直接注入到字段的栗子：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CoffeeMaker</span> </span>&#123;</span><br><span class="line">  <span class="meta">@Inject</span> Heater heater;</span><br><span class="line">  <span class="meta">@Inject</span> Pump pump;</span><br><span class="line"></span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>通过 modules 和 @Proivides 注解提供依赖(Dependencies)：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Module</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">DripCoffeeModule</span> </span>&#123;</span><br><span class="line">  <span class="meta">@Provides</span> <span class="function">Heater <span class="title">provideHeater</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> ElectricHeater();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Provides</span> <span class="function">Pump <span class="title">providePump</span><span class="params">(Thermosiphon pump)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> pump;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>关于依赖注入本身，如果想获取更多信息，请查看 Dagger 2 主页或 <a href="https://www.youtube.com/watch?v=oK_XtfXPkqw" target="_blank" rel="noopener">talk about Dagger 2 by Gregory Kick</a>。</p><h3 id="附加链接"><a href="#附加链接" class="headerlink" title="附加链接"></a>附加链接</h3><p><a href="http://androidweekly.net/" target="_blank" rel="noopener">Android 周报</a> 仍然是学习 Android 库最好的资源之一。这是关于Android开发的每周时事资讯。</p><p>此外，下面是 Android 行业经常发关于 Android 开发文章的大咖们：</p><p><a href="https://twitter.com/JakeWharton" target="_blank" rel="noopener">Jake Wharton</a> <a href="https://twitter.com/chrisbanes" target="_blank" rel="noopener">Chris Banes</a> <a href="https://twitter.com/cyrilmottier" target="_blank" rel="noopener">Cyril Mottier</a> <a href="https://twitter.com/commonsguy" target="_blank" rel="noopener">Mark Murphy</a> <a href="https://twitter.com/MarkIAllison" target="_blank" rel="noopener">Mark Allison</a> <a href="https://twitter.com/retomeier" target="_blank" rel="noopener">Reto Meier</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;原文链接 : &lt;a href=&quot;https://infinum.co/the-capsized-eight/articles/top-five-android-libraries-every-android-developer-should-know-about
+      
+    
+    </summary>
+    
+      <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
+    
+    
+      <category term="android" scheme="http://iamcc.github.io/tags/android/"/>
+    
+      <category term="lib" scheme="http://iamcc.github.io/tags/lib/"/>
+    
+      <category term="dev" scheme="http://iamcc.github.io/tags/dev/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MongoDB 分布式部署教程</title>
+    <link href="http://iamcc.github.io/2016/02/24/MongoDB-%E5%88%86%E5%B8%83%E5%BC%8F%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/"/>
+    <id>http://iamcc.github.io/2016/02/24/MongoDB-分布式部署教程/</id>
+    <published>2016-02-24T07:23:23.000Z</published>
+    <updated>2018-12-19T03:33:00.662Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://mr-dai.github.io/mongodb/2015/11/23/MongoDB-Distribution-Tutorial.html" target="_blank" rel="noopener">MongoDB 分布式部署教程</a></p><a id="more"></a><p>另外记一次数据库恢复过程。</p><h3 id="前因"><a href="#前因" class="headerlink" title="前因"></a>前因</h3><p>服务器因为受到用户抢红包而超负荷Down机，在没有意识的情况下直接重启了服务，结果出现了所有服务都出现了问题，最终定位为数据库连接失败。立即上服务器查询，第一感觉是一切良好，没有什么问题，唯一一个奇怪的地方就是，每个分片的Replset 的数据都正常，但是mongoos的collections却少了好多。Google一番还是没结果，😂，正欲哭无泪的时候想起了阿里的同学，经过一番帮助，终于恢复正常。</p><h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>出现collection数量不同步的原因原来是主shard出现了问题，重启服务的时候，不知什么情况下，shard1的Replset找不到master，然后shard1启动失败了，然后主shard变成了shard2，查来查去都查不到问题，因为一切看起来都那么正常。而少了的那部份collections就是shard1里面的未sharding的collection，未sharding的collection是不会同步到其他shard，所以当主shard是shard2的时候自然就少了那部份collections</p><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>😂，真是吓出一身冷汗，查不出问题也是因为经验不足和不够细心，也是对整套架构的了解不够，所以再次就一笔。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://mr-dai.github.io/mongodb/2015/11/23/MongoDB-Distribution-Tutorial.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;MongoDB 分布式部署教程&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
+    
+    
+      <category term="database" scheme="http://iamcc.github.io/tags/database/"/>
+    
+      <category term="mongodb" scheme="http://iamcc.github.io/tags/mongodb/"/>
+    
+      <category term="cluster" scheme="http://iamcc.github.io/tags/cluster/"/>
+    
+      <category term="sharding" scheme="http://iamcc.github.io/tags/sharding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Chrome extensions</title>
+    <link href="http://iamcc.github.io/2016/02/22/Chrome%20extensions/"/>
+    <id>http://iamcc.github.io/2016/02/22/Chrome extensions/</id>
+    <published>2016-02-22T05:53:25.000Z</published>
+    <updated>2018-12-19T03:33:00.662Z</updated>
+    
+    <content type="html"><![CDATA[<table><thead><tr><th>name</th><th>detail</th></tr></thead><tbody><tr><td>JSONView</td><td>JSON 格式化查看器。<a href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc" target="_blank" rel="noopener">Download</a></td></tr><tr><td>Justinmind</td><td>用户查看产品部发布的产品图。<a href="https://chrome.google.com/webstore/detail/justinmind-extension/pnfffbfcdapknabgmlnpagljkjdejaap" target="_blank" rel="noopener">Download</a></td></tr><tr><td>Octo Linker</td><td>自动分析package.json 里面的包，增加跳转链接。<a href="https://chrome.google.com/webstore/detail/octo-linker/jlmafbaeoofdegohdhinkhilhclaklkp" target="_blank" rel="noopener">Download</a></td></tr><tr><td>Octotree</td><td>为Github 增加文件导航。<a href="https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc" target="_blank" rel="noopener">Download</a></td></tr><tr><td>OneTab</td><td>当打开很多Tab的时候，电脑很慢，想暂时关闭的时候可以用。<a href="https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall" target="_blank" rel="noopener">Download</a></td></tr><tr><td>PageSpeed Insights (by Google)</td><td>前端页面优化分析工具。<a href="https://developers.google.com/speed/pagespeed/" target="_blank" rel="noopener">Download</a></td></tr><tr><td>Postman</td><td>API调试工具。<a href="https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop" target="_blank" rel="noopener">Download</a></td></tr><tr><td>Proxy SwitchySharp</td><td>翻墙工具。<a href="https://chrome.google.com/webstore/detail/proxy-switchysharp/dpplabbmogkhghncfbfdeeokoefdjegm" target="_blank" rel="noopener">Download</a></td></tr><tr><td>React Developer Tools</td><td>React 调试工具。<a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi" target="_blank" rel="noopener">Download</a></td></tr><tr><td>Vue.js devtools</td><td>Vue.js 调试工具。<a href="https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd" target="_blank" rel="noopener">Download</a></td></tr><tr><td>草料二维码</td><td>二维码生成器。<a href="http://static.clewm.net/cli/addons/caoliao.crx" target="_blank" rel="noopener">Download</a></td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;name&lt;/th&gt;
+&lt;th&gt;detail&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;JSONView&lt;/td&gt;
+&lt;td&gt;JSON 格式化查看器。&lt;a href=&quot;https://chrome.goo
+      
+    
+    </summary>
+    
+      <category term="tools" scheme="http://iamcc.github.io/categories/tools/"/>
+    
+    
+      <category term="tools" scheme="http://iamcc.github.io/tags/tools/"/>
+    
+      <category term="chrome" scheme="http://iamcc.github.io/tags/chrome/"/>
+    
+      <category term="app" scheme="http://iamcc.github.io/tags/app/"/>
+    
+      <category term="extension" scheme="http://iamcc.github.io/tags/extension/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sublime text 3 配置</title>
+    <link href="http://iamcc.github.io/2016/02/17/Sublime-text-3-%E9%85%8D%E7%BD%AE/"/>
+    <id>http://iamcc.github.io/2016/02/17/Sublime-text-3-配置/</id>
+    <published>2016-02-17T08:29:50.000Z</published>
+    <updated>2018-12-19T03:33:00.662Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>此文是基于<code>Mac</code>下的<code>Sublime text 3</code>版本的插件配置，不保证兼容<code>Sublime text 2</code>。</p></blockquote><a id="more"></a><h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><table><thead><tr><th>名称</th><th>说明</th></tr></thead><tbody><tr><td>Package Control</td><td>安装插件必备，<a href="https://packagecontrol.io/installation" target="_blank" rel="noopener">下载</a></td></tr><tr><td>AutoFileName</td><td>文件路径提示</td></tr><tr><td>Babel</td><td>ES6 代码高亮</td></tr><tr><td>Babel Snippets</td><td>ES6 代码提示</td></tr><tr><td>BracketHighlighter</td><td>括号和标签的高亮</td></tr><tr><td>CSS3</td><td>CSS3 代码提示</td></tr><tr><td>CSScomb</td><td>CSS 代码格式化</td></tr><tr><td>DocBlockr</td><td>快速生成注释文档</td></tr><tr><td>Emmet</td><td>快速编写 html</td></tr><tr><td>FileHeader</td><td>自动生成文件头</td></tr><tr><td>Git</td><td>Git 工具（需要安装Git）</td></tr><tr><td>HTML5</td><td>HTML5 帮助插件</td></tr><tr><td>jQuery</td><td>jQuery api 提示</td></tr><tr><td>JSCS-Formatter</td><td>js 格式化插件（需要安装 jscs <code>npm i -g jscs</code>）</td></tr><tr><td>LESS</td><td>less 代码高亮</td></tr><tr><td>SFTP</td><td>ftp 插件</td></tr><tr><td>SideBarEnhancements</td><td>侧边栏增强插件</td></tr><tr><td>SublimeCodeIntel</td><td>代码提示插件</td></tr><tr><td>SublimeLinter</td><td>代码格式检查基础插件</td></tr><tr><td>SublimeLinter-contrib-eslint</td><td>eslint 代码格式检查插件（需要安装eslint@1 <code>npm i -g eslint@1</code>）</td></tr><tr><td>SublimeLinter-json</td><td>json 格式检查</td></tr><tr><td>SVN</td><td>svn 插件</td></tr><tr><td>Terminal</td><td>快速打开命令行</td></tr><tr><td>TrailingSpaces</td><td>自动删除多余的空格</td></tr><tr><td>Volt</td><td>Volt 文件高亮</td></tr><tr><td>Vue Syntax Highlight</td><td>vue 文件代码高亮</td></tr></tbody></table><h2 id="皮肤"><a href="#皮肤" class="headerlink" title="皮肤"></a>皮肤</h2><p>推荐一套看起来比较舒服的皮肤<code>Seti_UI</code></p><h2 id="Sublime-配置文件"><a href="#Sublime-配置文件" class="headerlink" title="Sublime 配置文件"></a>Sublime 配置文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">&quot;Seti_SB_big&quot;: true,</span><br><span class="line">&quot;Seti_SB_med&quot;: true,</span><br><span class="line">&quot;Seti_no_blue_bar&quot;: true,</span><br><span class="line">&quot;Seti_tabs_med&quot;: true,</span><br><span class="line">&quot;Seti_tabs_small&quot;: true,</span><br><span class="line">&quot;additional_path_items&quot;:</span><br><span class="line">[</span><br><span class="line">&quot;/usr/local/bin&quot;</span><br><span class="line">],</span><br><span class="line">&quot;always_show_minimap_viewport&quot;: true,</span><br><span class="line">&quot;bold_folder_labels&quot;: true,</span><br><span class="line">&quot;color_scheme&quot;: &quot;Packages/User/SublimeLinter/Oceanic Next (SL).tmTheme&quot;,</span><br><span class="line">&quot;default_line_ending&quot;: &quot;unix&quot;,</span><br><span class="line">&quot;ensure_newline_at_eof_on_save&quot;: true,</span><br><span class="line">&quot;font_face&quot;: &quot;Fira Mono&quot;,</span><br><span class="line">&quot;ignored_packages&quot;:</span><br><span class="line">[</span><br><span class="line">&quot;JavaScript&quot;,</span><br><span class="line">&quot;Markdown&quot;,</span><br><span class="line">&quot;Vintage&quot;</span><br><span class="line">],</span><br><span class="line">&quot;line_padding_bottom&quot;: 3,</span><br><span class="line">&quot;line_padding_top&quot;: 3,</span><br><span class="line">&quot;overlay_scroll_bars&quot;: &quot;enabled&quot;,</span><br><span class="line">&quot;tab_size&quot;: 2,</span><br><span class="line">&quot;theme&quot;: &quot;Seti.sublime-theme&quot;,</span><br><span class="line">&quot;translate_tabs_to_spaces&quot;: true,</span><br><span class="line">&quot;trim_trailing_white_space_on_save&quot;: true,</span><br><span class="line">&quot;word_wrap&quot;: &quot;false&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>注意这里我用到<code>Fira Mono</code>字体，没有的可以去下载安装，等宽字体，看起来比较舒服。</p></blockquote><h2 id="如何让-Sublime-帮我检查代码格式"><a href="#如何让-Sublime-帮我检查代码格式" class="headerlink" title="如何让 Sublime 帮我检查代码格式"></a>如何让 Sublime 帮我检查代码格式</h2><ol><li><code>npm i -g eslint@1 eslint-config-airbnb eslint-plugin-react</code></li><li><p>在项目根目录创建<code>.eslintrc</code>文件内容</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;extends&quot;: &quot;airbnb&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>现在只要在<code>Sublime</code>编写<code>javascript</code>就会提示错误了。</p></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;此文是基于&lt;code&gt;Mac&lt;/code&gt;下的&lt;code&gt;Sublime text 3&lt;/code&gt;版本的插件配置，不保证兼容&lt;code&gt;Sublime text 2&lt;/code&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="tools" scheme="http://iamcc.github.io/categories/tools/"/>
+    
+    
+      <category term="tools" scheme="http://iamcc.github.io/tags/tools/"/>
+    
+      <category term="sublime" scheme="http://iamcc.github.io/tags/sublime/"/>
+    
+      <category term="editor" scheme="http://iamcc.github.io/tags/editor/"/>
+    
+      <category term="exp" scheme="http://iamcc.github.io/tags/exp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>56个 PHP 开发常用代码片段</title>
+    <link href="http://iamcc.github.io/2016/02/15/56%E4%B8%AA-PHP-%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/"/>
+    <id>http://iamcc.github.io/2016/02/15/56个-PHP-开发常用代码片段/</id>
+    <published>2016-02-15T01:28:40.000Z</published>
+    <updated>2018-12-19T03:33:00.661Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://www.phpxs.com/code/1009843" target="_blank" rel="noopener">http://www.phpxs.com/code/1009843</a></p><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://www.phpxs.com/code/1009843&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.phpxs.com/code/1009843&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
+    
+    
+      <category term="php" scheme="http://iamcc.github.io/tags/php/"/>
+    
+      <category term="code" scheme="http://iamcc.github.io/tags/code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何在 VPS 上搭建 VPN 来翻墙 </title>
+    <link href="http://iamcc.github.io/2016/02/15/%E5%A6%82%E4%BD%95%E5%9C%A8-VPS-%E4%B8%8A%E6%90%AD%E5%BB%BA-VPN-%E6%9D%A5%E7%BF%BB%E5%A2%99/"/>
+    <id>http://iamcc.github.io/2016/02/15/如何在-VPS-上搭建-VPN-来翻墙/</id>
+    <published>2016-02-15T01:17:23.000Z</published>
+    <updated>2018-12-19T03:33:00.664Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://www.jianshu.com/p/2f51144c35c9" target="_blank" rel="noopener">http://www.jianshu.com/p/2f51144c35c9</a></p><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/p/2f51144c35c9&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.jianshu.com/p/2f51144c35c9&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
+    
+    
+      <category term="ss" scheme="http://iamcc.github.io/tags/ss/"/>
+    
+      <category term="shadowsocks" scheme="http://iamcc.github.io/tags/shadowsocks/"/>
+    
+      <category term="vpn" scheme="http://iamcc.github.io/tags/vpn/"/>
+    
+      <category term="vps" scheme="http://iamcc.github.io/tags/vps/"/>
+    
+      <category term="翻墙" scheme="http://iamcc.github.io/tags/%E7%BF%BB%E5%A2%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RSA算法原理</title>
+    <link href="http://iamcc.github.io/2016/02/04/RSA%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86/"/>
+    <id>http://iamcc.github.io/2016/02/04/RSA算法原理/</id>
+    <published>2016-02-04T08:36:11.000Z</published>
+    <updated>2018-12-19T03:33:00.662Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html</a><br><a href="http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html</a><br><a id="more"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
+    
+    
+      <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
+    
+      <category term="rsa" scheme="http://iamcc.github.io/tags/rsa/"/>
+    
+      <category term="算法" scheme="http://iamcc.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ECMAScript 6 入门</title>
+    <link href="http://iamcc.github.io/2016/01/28/ECMAScript-6-%E5%85%A5%E9%97%A8/"/>
+    <id>http://iamcc.github.io/2016/01/28/ECMAScript-6-入门/</id>
+    <published>2016-01-28T03:54:52.000Z</published>
+    <updated>2018-12-19T03:33:00.662Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://es6.ruanyifeng.com/" target="_blank" rel="noopener">http://es6.ruanyifeng.com/</a><br><a id="more"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://es6.ruanyifeng.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://es6.ruanyifeng.com/&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
+    
+    
+      <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
+    
+      <category term="js" scheme="http://iamcc.github.io/tags/js/"/>
+    
+      <category term="javascript" scheme="http://iamcc.github.io/tags/javascript/"/>
+    
+      <category term="es6" scheme="http://iamcc.github.io/tags/es6/"/>
+    
+      <category term="es2015" scheme="http://iamcc.github.io/tags/es2015/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>深入解析Go</title>
+    <link href="http://iamcc.github.io/2016/01/22/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90Go/"/>
+    <id>http://iamcc.github.io/2016/01/22/深入解析Go/</id>
+    <published>2016-01-22T04:44:25.000Z</published>
+    <updated>2018-12-19T03:33:00.666Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://tiancaiamao.gitbooks.io/go-internals/content/zh/" target="_blank" rel="noopener">https://tiancaiamao.gitbooks.io/go-internals/content/zh/</a><br><a id="more"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://tiancaiamao.gitbooks.io/go-internals/content/zh/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://tiancaiamao.gitbooks.io/go-internals/content/zh/&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
+    
+    
+      <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
+    
+      <category term="go" scheme="http://iamcc.github.io/tags/go/"/>
+    
+      <category term="golang" scheme="http://iamcc.github.io/tags/golang/"/>
+    
+      <category term="cgo" scheme="http://iamcc.github.io/tags/cgo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Go语言调用C</title>
+    <link href="http://iamcc.github.io/2016/01/22/Go%E8%AF%AD%E8%A8%80%E8%B0%83%E7%94%A8C/"/>
+    <id>http://iamcc.github.io/2016/01/22/Go语言调用C/</id>
+    <published>2016-01-22T04:36:10.000Z</published>
+    <updated>2018-12-19T03:33:00.662Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://www.hoverlees.com/blog/?p=1465" target="_blank" rel="noopener">http://www.hoverlees.com/blog/?p=1465</a><br><a id="more"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://www.hoverlees.com/blog/?p=1465&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.hoverlees.com/blog/?p=1465&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
+    
+    
+      <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
+    
+      <category term="go" scheme="http://iamcc.github.io/tags/go/"/>
+    
+      <category term="golang" scheme="http://iamcc.github.io/tags/golang/"/>
+    
+      <category term="cgo" scheme="http://iamcc.github.io/tags/cgo/"/>
+    
+      <category term="c" scheme="http://iamcc.github.io/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Google搜索技巧</title>
+    <link href="http://iamcc.github.io/2016/01/21/Google%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7/"/>
+    <id>http://iamcc.github.io/2016/01/21/Google搜索技巧/</id>
+    <published>2016-01-21T07:20:06.000Z</published>
+    <updated>2018-12-19T03:33:00.662Z</updated>
+    
+    <content type="html"><![CDATA[<p><br>    在今天，用户可以通过搜索引擎轻松找出自己想要的信息，但还是难以避免结果不尽如人意的情况。实际上，用户仅需掌握几个常用技巧即可轻松化解这种尴尬。下面介绍 10 个在进行 Google 搜索时可以使用的便捷技巧，其他搜索引擎也支持这 10 种技巧。<br></p><br><a id="more"></a><br><p>1、准确搜索</p><br><p align="center"><br>    <img height="324" alt="" width="498" src="http://cimage.tianjimedia.com/uploadImages/20160120090324113.jpg"></p><br><p>最简单、有效的准确搜索方式是在关键词上加上双引号，在这种情况下，搜索引擎只会反馈和关键词完全吻合的搜索结果。</p><br><p><br>    比方说在搜索「Joe Bloggs」的时候，在没有给关键词加上双引号的情况，搜索引擎会显示所有分别和「Joe」以及「Bloggs」相关的信息，但这些显然并不是我们想要 的结果。但在加上双引号后，搜索引擎则仅会在页面上反馈和「Joe Bloggs」相吻合的信息。<br></p><br><p>准确搜索在排除常见但相近度偏低的信息时非常有用，可以为用户省去再度对结果进行筛选的麻烦。</p><br><p>2、排除关键词</p><br><p align="center"><br>    <img height="351" alt="" width="498" src="http://cimage.tianjimedia.com/uploadImages/20160120090324931.jpg"></p><br><p>如果在进行准确搜索时没有找到自己想要的结果，用户可以对包含特定词汇的信息进行排除，仅需使用减号即可。</p><br><p><br>    例如在搜索「『Joe Bloggs』-jeans」时，你所得到的结果反馈是不包含「jeans」字眼的「Joe Bloggs」条目。<br></p><br><p>3、用「Either OR」(或)逻辑进行搜索</p><br><p align="center"><br>    <img height="295" alt="" width="493" src="http://cimage.tianjimedia.com/uploadImages/20160120090324130.jpg"></p><br><p><br>    在默认搜索下，搜索引擎会反馈所有和查询词汇相关的结果，但通过使用「OR」逻辑，你可以得到和两个关键词分别相关的结果，而不仅仅是和两个关键词 都同时相关的结果。巧妙使用「OR」搜索可以让你在未能确定哪个关键词对于搜索结果起决定作用时依然可以确保搜索结果的准确性。<br></p><br><p>4、同义词搜索</p><br><p align="center"><br>    <img height="272" alt="" width="454" src="http://cimage.tianjimedia.com/uploadImages/20160120090325927.jpg"></p><br><p>有时候对不太确切的关键词进行搜索反而会显得更加合适。在未能准确判断关键词的情况下，你可以通过同义词进行搜索。</p><br><p><br>    如果你在搜索引擎输入「plumbing ~university」，你所得到的反馈结果会包含「plumbing universities」和「plumbing colleges」等相似条目。<br></p><br><p>5、在站内进行搜索</p><br><p align="center"><br>    <img height="303" alt="" width="498" src="http://cimage.tianjimedia.com/uploadImages/20160120090325251.jpg"></p><br><p>绝大部分网站的搜索功能都有所欠缺，因此，更好的方法是通过 Google 等搜索引擎对站内的信息进行搜索。</p><br><p><br>    你只需要在搜索引擎上输入「site:theguardian.com」加上关键词，搜索引擎就会反馈网站「theguardian.com」内和关键词相关的所有条目。如果再结合准确搜索功能，这项功能将会变得更加强大。<br></p><br><p>6、善用星号</p><br><p align="center"><br>    <img height="306" alt="" width="498" src="http://cimage.tianjimedia.com/uploadImages/20160120090325603.jpg"></p><br><p><br>    正如拼图游戏「Scrabble」的空白方块一样，在搜索引擎中，我们可以用星号填补关键词中的缺失部分，不论缺失的是一连串单词的其中一个还是一个单词的某一部分。此外，当你希望搜索一篇确定性偏低的文章时，也可以使用星号填补缺失部分。<br></p><br><p><br>    例如，如果你在搜索引擎中输入「architect*」，你所得到的反馈结果将会是所有包含 architect、architectural、architecture、architected、architecting 以及其他所有以「architect」作为开头的词汇的条目。<br></p><br><p>7、在两个数值之间进行搜索</p><br><p align="center"><br>    <img height="303" alt="" width="498" src="http://cimage.tianjimedia.com/uploadImages/20160120090325874.jpg"></p><br><p><br>    在寻找问题的答案时，一个很好的方法是在一定范围内寻找和关键词相关的资讯。例如想要找出 1920 至 1950 年间的英国首相，直接在搜索引擎中输入「英国首相 1920.. 1950」即可得出想要的结果。<br></p><br><p>记住，数值之间的符号是两个英文句号加一个空格键。</p><br><p>8、在网页标题、链接和主体中搜索关键词</p><br><p align="center"><br>    <img height="338" alt="" width="498" src="http://cimage.tianjimedia.com/uploadImages/20160120090325238.jpg"></p><br><p><br>    有时你或许会遇上找出所有和关键词相关的所有网页标题、链接和网页主体的需求，在这个时候你需要使用的是限定词「inurl:」(供在 url 链接中搜索使用)、「intext:」(供在网页主体中搜索使用)以及「intitle:」(供在网页标题中搜索使用)。<br></p><br><p>例如，在搜索引擎中输入「intitle: 评测」会得到所有和关键词「评测」相关的网页标题。</p><br><p>9、搜索相关网站</p><br><p align="center"><br>    <img height="298" alt="" width="497" src="http://cimage.tianjimedia.com/uploadImages/20160120090325204.jpg"></p><br><p><br>    相关的限定词可用于搜索相关网站时使用。例如，你仅需在搜索引擎中输入「related:theguardian.com」即可得到所有和「theguardian.com」相关的网站反馈结果。<br></p><br><p>10、搜索技能的组合使用</p><br><p align="center"><br>    <img height="337" alt="" width="498" src="http://cimage.tianjimedia.com/uploadImages/20160120090326648.jpg"></p><br><p><br>    你可以对上述所有搜索技能进行组合运用，以便按照自己的意愿缩小或者扩展搜索范围。尽管有些技能或许并不常用，但准确搜索和站内搜索这些技能的使用范围还是相当广泛的。<br></p><br><p><br>    随着 Google 等搜索引擎对于用户自然语言的理解程度与日俱增，这些搜索技能可以派上用场的情况或许将会变得越来越少，至少这是所有搜索引擎共同追求的目标。但是在当下，掌握这些搜索技能还是非常必要的。<br></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;br&gt;    在今天，用户可以通过搜索引擎轻松找出自己想要的信息，但还是难以避免结果不尽如人意的情况。实际上，用户仅需掌握几个常用技巧即可轻松化解这种尴尬。下面介绍 10 个在进行 Google 搜索时可以使用的便捷技巧，其他搜索引擎也支持这 10 种技巧。&lt;br&gt;&lt;/p&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="tech" scheme="http://iamcc.github.io/categories/tech/"/>
+    
+    
+      <category term="tech" scheme="http://iamcc.github.io/tags/tech/"/>
+    
+      <category term="google" scheme="http://iamcc.github.io/tags/google/"/>
+    
+      <category term="search" scheme="http://iamcc.github.io/tags/search/"/>
+    
+  </entry>
+  
+</feed>

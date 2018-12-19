@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Sublime text 3 配置 · Something</title><meta name="description" content="Sublime text 3 配置 - CC"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://iamcc.github.io/atom.xml" title="Something"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="http://weibo.com/sunchongsheng" target="_blank" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/pinggod" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">Sublime text 3 配置</h1><div class="post-info">Feb 17, 2016</div><div class="post-content"><blockquote>
+<p>此文是基于<code>Mac</code>下的<code>Sublime text 3</code>版本的插件配置，不保证兼容<code>Sublime text 2</code>。</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Package Control</td>
+<td>安装插件必备，<a href="https://packagecontrol.io/installation" target="_blank" rel="noopener">下载</a></td>
+</tr>
+<tr>
+<td>AutoFileName</td>
+<td>文件路径提示</td>
+</tr>
+<tr>
+<td>Babel</td>
+<td>ES6 代码高亮</td>
+</tr>
+<tr>
+<td>Babel Snippets</td>
+<td>ES6 代码提示</td>
+</tr>
+<tr>
+<td>BracketHighlighter</td>
+<td>括号和标签的高亮</td>
+</tr>
+<tr>
+<td>CSS3</td>
+<td>CSS3 代码提示</td>
+</tr>
+<tr>
+<td>CSScomb</td>
+<td>CSS 代码格式化</td>
+</tr>
+<tr>
+<td>DocBlockr</td>
+<td>快速生成注释文档</td>
+</tr>
+<tr>
+<td>Emmet</td>
+<td>快速编写 html</td>
+</tr>
+<tr>
+<td>FileHeader</td>
+<td>自动生成文件头</td>
+</tr>
+<tr>
+<td>Git</td>
+<td>Git 工具（需要安装Git）</td>
+</tr>
+<tr>
+<td>HTML5</td>
+<td>HTML5 帮助插件</td>
+</tr>
+<tr>
+<td>jQuery</td>
+<td>jQuery api 提示</td>
+</tr>
+<tr>
+<td>JSCS-Formatter</td>
+<td>js 格式化插件（需要安装 jscs <code>npm i -g jscs</code>）</td>
+</tr>
+<tr>
+<td>LESS</td>
+<td>less 代码高亮</td>
+</tr>
+<tr>
+<td>SFTP</td>
+<td>ftp 插件</td>
+</tr>
+<tr>
+<td>SideBarEnhancements</td>
+<td>侧边栏增强插件</td>
+</tr>
+<tr>
+<td>SublimeCodeIntel</td>
+<td>代码提示插件</td>
+</tr>
+<tr>
+<td>SublimeLinter</td>
+<td>代码格式检查基础插件</td>
+</tr>
+<tr>
+<td>SublimeLinter-contrib-eslint</td>
+<td>eslint 代码格式检查插件（需要安装eslint@1 <code>npm i -g eslint@1</code>）</td>
+</tr>
+<tr>
+<td>SublimeLinter-json</td>
+<td>json 格式检查</td>
+</tr>
+<tr>
+<td>SVN</td>
+<td>svn 插件</td>
+</tr>
+<tr>
+<td>Terminal</td>
+<td>快速打开命令行</td>
+</tr>
+<tr>
+<td>TrailingSpaces</td>
+<td>自动删除多余的空格</td>
+</tr>
+<tr>
+<td>Volt</td>
+<td>Volt 文件高亮</td>
+</tr>
+<tr>
+<td>Vue Syntax Highlight</td>
+<td>vue 文件代码高亮</td>
+</tr>
+</tbody>
+</table>
+<h2 id="皮肤"><a href="#皮肤" class="headerlink" title="皮肤"></a>皮肤</h2><p>推荐一套看起来比较舒服的皮肤<code>Seti_UI</code></p>
+<h2 id="Sublime-配置文件"><a href="#Sublime-配置文件" class="headerlink" title="Sublime 配置文件"></a>Sublime 配置文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	&quot;Seti_SB_big&quot;: true,</span><br><span class="line">	&quot;Seti_SB_med&quot;: true,</span><br><span class="line">	&quot;Seti_no_blue_bar&quot;: true,</span><br><span class="line">	&quot;Seti_tabs_med&quot;: true,</span><br><span class="line">	&quot;Seti_tabs_small&quot;: true,</span><br><span class="line">	&quot;additional_path_items&quot;:</span><br><span class="line">	[</span><br><span class="line">		&quot;/usr/local/bin&quot;</span><br><span class="line">	],</span><br><span class="line">	&quot;always_show_minimap_viewport&quot;: true,</span><br><span class="line">	&quot;bold_folder_labels&quot;: true,</span><br><span class="line">	&quot;color_scheme&quot;: &quot;Packages/User/SublimeLinter/Oceanic Next (SL).tmTheme&quot;,</span><br><span class="line">	&quot;default_line_ending&quot;: &quot;unix&quot;,</span><br><span class="line">	&quot;ensure_newline_at_eof_on_save&quot;: true,</span><br><span class="line">	&quot;font_face&quot;: &quot;Fira Mono&quot;,</span><br><span class="line">	&quot;ignored_packages&quot;:</span><br><span class="line">	[</span><br><span class="line">		&quot;JavaScript&quot;,</span><br><span class="line">		&quot;Markdown&quot;,</span><br><span class="line">		&quot;Vintage&quot;</span><br><span class="line">	],</span><br><span class="line">	&quot;line_padding_bottom&quot;: 3,</span><br><span class="line">	&quot;line_padding_top&quot;: 3,</span><br><span class="line">	&quot;overlay_scroll_bars&quot;: &quot;enabled&quot;,</span><br><span class="line">	&quot;tab_size&quot;: 2,</span><br><span class="line">	&quot;theme&quot;: &quot;Seti.sublime-theme&quot;,</span><br><span class="line">	&quot;translate_tabs_to_spaces&quot;: true,</span><br><span class="line">	&quot;trim_trailing_white_space_on_save&quot;: true,</span><br><span class="line">	&quot;word_wrap&quot;: &quot;false&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>注意这里我用到<code>Fira Mono</code>字体，没有的可以去下载安装，等宽字体，看起来比较舒服。</p>
+</blockquote>
+<h2 id="如何让-Sublime-帮我检查代码格式"><a href="#如何让-Sublime-帮我检查代码格式" class="headerlink" title="如何让 Sublime 帮我检查代码格式"></a>如何让 Sublime 帮我检查代码格式</h2><ol>
+<li><code>npm i -g eslint@1 eslint-config-airbnb eslint-plugin-react</code></li>
+<li><p>在项目根目录创建<code>.eslintrc</code>文件内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;extends&quot;: &quot;airbnb&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>现在只要在<code>Sublime</code>编写<code>javascript</code>就会提示错误了。</p>
+</li>
+</ol>
+</div></article></div></main><footer><div class="paginator"><a href="/2016/02/22/Chrome extensions/" class="prev">PREV</a><a href="/2016/02/15/56个-PHP-开发常用代码片段/" class="next">NEXT</a></div><div class="copyright"><p>© 2015 - 2018 <a href="http://iamcc.github.io">CC</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script></body></html>
